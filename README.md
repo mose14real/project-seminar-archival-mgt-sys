@@ -1,1 +1,1 @@
-# project-seminar-archival-mgt-sys
+Project & Seminar Archival Management System
