@@ -1,0 +1,25 @@
+:root{
+    --deep-blue:#0A253B;
+    --v-deep-blue:#071b2b;
+    --light-blue:#1FC1C3;
+}
+
+
+*{
+    text-decoration:none !important;
+}
+body{
+    background-color:var(--deep-blue);
+    /* font-family:"Sharp Sans No1", sans-serif; */
+}
+/* NAVBAR SECTION STYLING */
+.navbar{
+    background-color:var(--v-deep-blue);
+}
+/* HEADER SECTION STYLING */
+.header-section{
+    min-height:90vh;
+}
+.data-archival-img{
+    width:200px;
+}
