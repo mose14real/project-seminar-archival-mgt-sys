@@ -7,11 +7,10 @@
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 
-    <link href="//db.onlinewebfonts.com/c/154ebfcef3ca74b92a56a5826ee85d74?family=Sharp+Sans+No1+Bold" rel="stylesheet" type="text/css"/>
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <!-- FONTAWESOME CDN -->
-    <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css') }}">
     <!-- GENERAL STYLESHEET -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <title>Project & Seminar Archival Mgt Sys</title>
@@ -79,7 +78,7 @@
 <!-- PROJECT AND SEMINAR HERE -->
 <div class="project-and-seminar-section bg-white" id="projects">
   <div class="container">
-    <h1 class="text-center mt-3">Projects And Seminars</h1>
+    <h1 class="text-center mt-5">Projects And Seminars</h1>
     <p class="text-center mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus laborum optio neque minima, asperiores assumenda repellat explicabo et aut sit earum atque cupiditate nam voluptatibus nisi, porro quae aliquam harum modi dolor? Voluptatum repellat tempore repudiandae praesentium error totam magnam dolorem debitis, molestiae explicabo cum id maiores vel unde nostrum ad, earum sit minus? Consequatur, voluptas officiis consequuntur quos illum error! Exercitationem, pariatur beatae qui dolore facilis voluptates unde nesciunt vitae quod sint, non animi ducimus libero nobis numquam eum laborum. Quo consequuntur dicta odio quos corrupti eveniet sequi architecto nihil tenetur excepturi alias rem ab laudantium, repellendus quia sed!</p>
     <div class="d-flex">
 
@@ -91,8 +90,8 @@
       <!-- projects cards starts here -->
       <div class="col-4 p-2">
         <div class="card mt-5">
-        <div class="card-header">
-          <h3>Projects</h3>
+        <div class="card-header project-header">
+          <h3 class="text-white">Projects <i class="bi bi-collection"></i></h3>
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
@@ -104,6 +103,12 @@
           <li class="list-group-item">
             <a href="#">Project three</a>
           </li>
+          <li class="list-group-item">
+            <a href="#">Project three</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#">Project three</a>
+          </li>
         </ul>
         </div>
       </div>
@@ -111,8 +116,8 @@
       <!-- Seminars cards starts here -->
       <div class="col-4 p-2">
         <div class="card mt-5">
-        <div class="card-header">
-          <h3>Seminars</h3>
+        <div class="card-header seminar-header">
+          <h3 class="text-white">Seminars <i class="bi bi-collection"></i></h3>
         </div>
         <ul class="list-group list-group-flush">
         <li class="list-group-item">
@@ -124,11 +129,183 @@
           <li class="list-group-item">
             <a href="#">Seminars three</a>
           </li>
+          <li class="list-group-item">
+            <a href="#">Seminars three</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#">Seminars three</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#">Seminars three</a>
+          </li>
         </ul>
         </div>
       </div>
     </div>
     </div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="projects">
+  <div class="container">
+  <div class="row">
+  <!-- project card starts here -->
+  <div class="col-sm-4 mb-3">
+    <div class="card project-main-card">
+      <div class="card-body">
+        <span class="badge text-bg-primary mb-2">project <i class="bi bi-book-fill"></i></span>
+        <h5 class="card-title">
+          <a href="#">Control Management system in Javascript</a>
+        </h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio ipsam obcaecati doloribus officiis, nesciunt eum laborum nostrum error consectetur?
+        </p>
+        <div class="row mb-3">
+          <div class="col">
+            <a href="#">
+              <i class="bi bi-person-circle fs-6"></i> <span class="ml-2 fs-6">Ariyibi</span>
+            </a>
+          </div>
+          <div class="col">
+            <i class="bi bi-alarm-fill fs-6"></i> <span class="ml-2 fs-6">2022-09-05</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer project-card-footer">
+        <div class="row">
+          <div class="col">
+            <i class="bi bi-eye-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">4</span>
+          </div>
+          <div class="col">
+            <i class="bi bi-heart-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">10</span>
+          </div>
+          <div class="col">
+            <i class="bi bi-cloud-download-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">100</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ends here -->
+
+  <!-- project card starts here -->
+  <div class="col-sm-4 mb-3">
+    <div class="card project-main-card">
+      <div class="card-body">
+        <span class="badge text-bg-primary mb-2">seminar <i class="bi bi-book-fill"></i></span>
+        <h5 class="card-title">
+          <a href="#">Control Management system in Javascript</a>
+        </h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio ipsam obcaecati doloribus officiis, nesciunt eum laborum nostrum error consectetur?
+        </p>
+        <div class="row mb-3">
+          <div class="col">
+            <a href="#">
+              <i class="bi bi-person-circle fs-6"></i> <span class="ml-2 fs-6">Ariyibi</span>
+            </a>
+          </div>
+          <div class="col">
+            <i class="bi bi-alarm-fill fs-6"></i> <span class="ml-2 fs-6">2022-09-05</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer project-card-footer">
+        <div class="row">
+          <div class="col">
+            <i class="bi bi-eye-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">4</span>
+          </div>
+          <div class="col">
+            <i class="bi bi-heart-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">10</span>
+          </div>
+          <div class="col">
+            <i class="bi bi-cloud-download-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">100</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ends here -->
+
+  <!-- project card starts here -->
+  <div class="col-sm-4 mb-3">
+    <div class="card project-main-card">
+      <div class="card-body">
+        <span class="badge text-bg-primary mb-2">project <i class="bi bi-book-fill"></i></span>
+        <h5 class="card-title">
+          <a href="#">Control Management system in Javascript</a>
+        </h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio ipsam obcaecati doloribus officiis, nesciunt eum laborum nostrum error consectetur?
+        </p>
+        <div class="row mb-3">
+          <div class="col">
+            <a href="#">
+              <i class="bi bi-person-circle fs-6"></i> <span class="ml-2 fs-6">Ariyibi</span>
+            </a>
+          </div>
+          <div class="col">
+            <i class="bi bi-alarm-fill fs-6"></i> <span class="ml-2 fs-6">2022-09-05</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer project-card-footer">
+        <div class="row">
+          <div class="col">
+            <i class="bi bi-eye-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">4</span>
+          </div>
+          <div class="col">
+            <i class="bi bi-heart-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">10</span>
+          </div>
+          <div class="col">
+            <i class="bi bi-cloud-download-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">100</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ends here -->
+
+  <!-- project card starts here -->
+  <div class="col-sm-4 mb-3">
+    <div class="card project-main-card">
+      <div class="card-body">
+        <span class="badge text-bg-primary mb-2">seminar <i class="bi bi-book-fill"></i></span>
+        <h5 class="card-title">
+          <a href="#">Control Management system in Javascript</a>
+        </h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio ipsam obcaecati doloribus officiis, nesciunt eum laborum nostrum error consectetur?
+        </p>
+        <div class="row mb-3">
+          <div class="col">
+            <a href="#">
+              <i class="bi bi-person-circle fs-6"></i> <span class="ml-2 fs-6">Ariyibi</span>
+            </a>
+          </div>
+          <div class="col">
+            <i class="bi bi-alarm-fill fs-6"></i> <span class="ml-2 fs-6">2022-09-05</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer project-card-footer">
+        <div class="row">
+          <div class="col">
+            <i class="bi bi-eye-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">4</span>
+          </div>
+          <div class="col">
+            <i class="bi bi-heart-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">10</span>
+          </div>
+          <div class="col">
+            <i class="bi bi-cloud-download-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">100</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ends here -->
+</div>
   </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>

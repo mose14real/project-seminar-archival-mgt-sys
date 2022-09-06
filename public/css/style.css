@@ -2,6 +2,7 @@
     --deep-blue:#0A253B;
     --v-deep-blue:#071b2b;
     --light-blue:#1FC1C3;
+    --v-light-blue:#d4f6f7;
 }
 
 
@@ -26,6 +27,7 @@ body{
     min-height:90vh;
     position:relative;
     background-color:var(--deep-blue);
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
 }
 .data-archival-img,.data-archival-img2{
     width:250px;
@@ -48,4 +50,18 @@ body{
 }
 .project-illustrations{
     width:250px;
+}
+.project-header,.seminar-header{
+    background-color:var(--deep-blue);
+}
+
+/* PROJECTS SECTION STYLING */
+.projects{
+    min-height:100vh;
+}
+.project-main-card{
+    background-color:var(--v-light-blue);
+}
+.project-card-footer{
+    background-color:var(--light-blue);
 }
