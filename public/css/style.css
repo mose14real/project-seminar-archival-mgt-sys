@@ -8,18 +8,44 @@
 *{
     text-decoration:none !important;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background-color:var(--deep-blue);
+    /* background-color:var(--deep-blue); */
     /* font-family:"Sharp Sans No1", sans-serif; */
 }
+
 /* NAVBAR SECTION STYLING */
 .navbar{
     background-color:var(--v-deep-blue);
 }
+
 /* HEADER SECTION STYLING */
 .header-section{
     min-height:90vh;
+    position:relative;
+    background-color:var(--deep-blue);
+}
+.data-archival-img,.data-archival-img2{
+    width:250px;
+    position:absolute;
+    z-index:1;
+    opacity:.3;
 }
 .data-archival-img{
-    width:200px;
+    top:40px;
+    right:0;
+}
+.data-archival-img2{
+    bottom:40px;
+    left:0;
+}
+
+/* PROJECT AND SEMINAR SECTION STYLING */
+.project-and-seminar-section{
+    min-height:100vh;
+}
+.project-illustrations{
+    width:250px;
 }
