@@ -13,4 +13,4 @@
     <h1>Project and Seminar Management System (Admin) <i class="fa-solid fa-book-open-cover"></i> </h1>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
+</html> 

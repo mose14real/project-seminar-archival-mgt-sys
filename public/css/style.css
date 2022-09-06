@@ -8,6 +8,7 @@
 
 *{
     text-decoration:none !important;
+    list-style-type:none;
 }
 html{
     scroll-behavior: smooth;
@@ -15,6 +16,7 @@ html{
 body{
     /* background-color:var(--deep-blue); */
     /* font-family:"Sharp Sans No1", sans-serif; */
+    overflow-x:hidden;
 }
 
 /* NAVBAR SECTION STYLING */
@@ -64,4 +66,10 @@ body{
 }
 .project-card-footer{
     background-color:var(--light-blue);
+}
+
+/* FOOTER SECTION STYLING */
+footer{
+    background-color:var(--v-deep-blue);
+    box-sizing:border-box;
 }

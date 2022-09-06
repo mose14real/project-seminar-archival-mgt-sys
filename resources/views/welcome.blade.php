@@ -91,7 +91,7 @@
       <div class="col-4 p-2">
         <div class="card mt-5">
         <div class="card-header project-header">
-          <h3 class="text-white">Projects <i class="bi bi-collection"></i></h3>
+          <h3 class="text-white">Projects</h3>
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
@@ -117,7 +117,7 @@
       <div class="col-4 p-2">
         <div class="card mt-5">
         <div class="card-header seminar-header">
-          <h3 class="text-white">Seminars <i class="bi bi-collection"></i></h3>
+          <h3 class="text-white">Seminars</h3>
         </div>
         <ul class="list-group list-group-flush">
         <li class="list-group-item">
@@ -308,6 +308,66 @@
 </div>
   </div>
 </div>
+
+<!-- FOOTER SECTION -->
+<footer class="mt-5">
+  <div class="container">
+    <div class="row">
+
+        <div class="col-sm-6 p-3 mb-3">
+          <a href="#">
+            <h4 class="text-white mt-3">ProjectArch</h4>
+          </a>
+          <p class="text-white mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque et, ipsum laboriosam, voluptatibus consequatur distinctio suscipit recusandae cupiditate quam voluptatem eius animi
+          </p>
+        </div>
+
+        <div class="col-sm-3 p-3 mb-3">
+          <h5 class="text-white mt-3">Quick Links</h5>
+          <ul>
+            <li class="mt-3">
+              <i class="bi bi-chevron-right text-white"></i> <a href="#">Home</a>
+            </li>
+            <li class="mt-2">
+              <i class="bi bi-chevron-right text-white"></i> <a href="#">Projects</a>
+            </li>
+            <li class="mt-2">
+              <i class="bi bi-chevron-right text-white"></i> <a href="#">Seminars</a>
+            </li>
+            <li class="mt-2">
+              <i class="bi bi-chevron-right text-white"></i> <a href="#">Register</a>
+            </li>
+            <li class="mt-2">
+              <i class="bi bi-chevron-right text-white"></i> <a href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-sm-3 p-3 mb-3">
+          <h5 class="text-white mt-3">Social Links</h5>
+
+          <a href="#">
+            <i class="bi bi-facebook text-white fs-4 mt-3"></i>
+          </a>
+
+          <a href="#" class="fs-4 ms-3 mt-3">
+            <i class="bi bi-twitter text-white"></i>
+          </a>
+
+          <a href="#" class="fs-4 ms-3 mt-3">
+            <i class="bi bi-linkedin text-white"></i>
+          </a>
+
+          <a href="#" class="fs-4 ms-3 mt-3">
+            <i class="bi bi-instagram text-white"></i>
+          </a>
+
+        </div>
+
+    </div>
+  </div>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
