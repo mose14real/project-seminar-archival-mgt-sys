@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- BOOTSTRAP -->
+    <!-- BOOTSTRAP CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-
+    <!-- BOOTSTRAP ICONS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <!-- FONTAWESOME CDN -->
+    <!-- FONTAWESOME LINK -->
     <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css') }}">
+    <!-- FAVICON -->
+    <link rel="icon" href="{{ asset('img/archival.svg') }}">
     <!-- GENERAL STYLESHEET -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
     <title>Project & Seminar Archival Mgt Sys</title>
 </head>
 <body>
@@ -20,7 +24,7 @@
 <!-- NAVBAR SECTION STARTS HERE -->
 <nav class="navbar navbar-expand-lg">
   <div class="container">
-    <h1 class="navbar-brand font-bold text-white " href="#">ProjectArch</h1>
+    <h1 class="navbar-brand font-bold text-white " href="#"><i class="bi bi-box-seam-fill"></i> ProjectArch</h1>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,10 +43,10 @@
       <!-- register and login button wrapper -->
       <div>
         <a href="" class="">
-            <button class="btn btn-primary">Register</button>
+            <button class="btn btn-block shadow-none register-btn">Register</button>
         </a>
-        <a href="" class="ml-3 mt-2">
-            <button class="btn btn-primary">Login</button>
+        <a href="" class="ms-3 mt-2">
+            <button class="btn btn-block shadow-none login-btn">Login</button>
         </a>
       </div>
     </div>
@@ -52,7 +56,7 @@
 <!-- HEADER SECTION STARTS HERE -->
 <header class="header-section d-flex align-items-center justify-content-center flex-column">
   <div class="container">
-    <h1 class="text-center text-white">Project and Seminar Management System <i class="fas fa-book-open-cover"></i></h1>
+    <h1 class="text-center header-text">Project and Seminar Management System <i class="fas fa-book-open-cover"></i></h1>
     <p class="mt-3 text-center text-white">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ducimus recusandae voluptatem, commodi odio optio rem, aperiam odit veniam saepe amet quam atque expedita officia nihil reiciendis? Provident cumque molestiae libero minima quasi corporis tempora error necessitatibus officiis, doloribus deleniti ipsum mollitia cum ex blanditiis illum architecto sequi aut impedit, voluptate atque alias magnam expedita ab? Eligendi facere et autem, sunt possimus minus ex, iure tempore nam fuga harum ut officiis cupiditate vel cum
     </p>
@@ -63,7 +67,7 @@
           <input type="search" class="form-control p-2" placeholder="Search Projects / Seminars" aria-label="First name">
         </div>
         <div class="col-4">
-          <button type="submit" class="btn btn-primary p-2 w-100">Search</button>
+          <button type="submit" class="btn btn-block p-2 w-100 search-btn">Search</button>
         </div>
       </div>
       </form>
@@ -78,7 +82,7 @@
 <!-- PROJECT AND SEMINAR HERE -->
 <div class="project-and-seminar-section bg-white" id="projects">
   <div class="container">
-    <h1 class="text-center mt-5">Projects And Seminars</h1>
+    <h1 class="text-center mt-5 deep-blue-color">Projects And Seminars</h1>
     <p class="text-center mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus laborum optio neque minima, asperiores assumenda repellat explicabo et aut sit earum atque cupiditate nam voluptatibus nisi, porro quae aliquam harum modi dolor? Voluptatum repellat tempore repudiandae praesentium error totam magnam dolorem debitis, molestiae explicabo cum id maiores vel unde nostrum ad, earum sit minus? Consequatur, voluptas officiis consequuntur quos illum error! Exercitationem, pariatur beatae qui dolore facilis voluptates unde nesciunt vitae quod sint, non animi ducimus libero nobis numquam eum laborum. Quo consequuntur dicta odio quos corrupti eveniet sequi architecto nihil tenetur excepturi alias rem ab laudantium, repellendus quia sed!</p>
     <div class="d-flex">
 
@@ -91,23 +95,23 @@
       <div class="col-4 p-2">
         <div class="card mt-5">
         <div class="card-header project-header">
-          <h3 class="text-white">Projects</h3>
+          <h4 class="text-white">Projects</h4>
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
-            <a href="#">Employee time sheet</a>
+            <a href="#">online exam project in PHP</a>
           </li>
           <li class="list-group-item">
-            <a href="#">Project two</a>
+            <a href="#">PSimple Furniture Website Single Page Template</a>
           </li>
           <li class="list-group-item">
-            <a href="#">Project three</a>
+            <a href="#">Android Firebase Attendance System template in kotlin</a>
           </li>
           <li class="list-group-item">
-            <a href="#">Project three</a>
+            <a href="#">Watch Trailer Responsive Website template in WEB</a>
           </li>
           <li class="list-group-item">
-            <a href="#">Project three</a>
+            <a href="#">online exam project in PHP</a>
           </li>
         </ul>
         </div>
@@ -117,26 +121,26 @@
       <div class="col-4 p-2">
         <div class="card mt-5">
         <div class="card-header seminar-header">
-          <h3 class="text-white">Seminars</h3>
+          <h4 class="text-white">Seminars</h4>
         </div>
         <ul class="list-group list-group-flush">
         <li class="list-group-item">
-            <a href="#">Employee time sheet</a>
+            <a href="#">eCommerce Website project in PHP</a>
           </li>
           <li class="list-group-item">
-            <a href="#">Seminars two</a>
+            <a href="#">Online Shopping Store project in PHP</a>
           </li>
           <li class="list-group-item">
-            <a href="#">Seminars three</a>
+            <a href="#">House Decor template in HTML CSS</a>
           </li>
           <li class="list-group-item">
-            <a href="#">Seminars three</a>
+            <a href="#">Online Shopping Store project in PHP</a>
           </li>
           <li class="list-group-item">
-            <a href="#">Seminars three</a>
+            <a href="#">Watch Trailer Responsive Website template in WEB</a>
           </li>
           <li class="list-group-item">
-            <a href="#">Seminars three</a>
+            <a href="#">online exam project in PHP</a>
           </li>
         </ul>
         </div>
@@ -154,7 +158,7 @@
   <div class="col-sm-4 mb-3">
     <div class="card project-main-card">
       <div class="card-body">
-        <span class="badge text-bg-primary mb-2">project <i class="bi bi-book-fill"></i></span>
+        <span class="badge text-bg-primary mb-2 font-poppins">project <i class="bi bi-book-fill"></i></span>
         <h5 class="card-title">
           <a href="#">Control Management system in Javascript</a>
         </h5>
@@ -193,9 +197,9 @@
   <div class="col-sm-4 mb-3">
     <div class="card project-main-card">
       <div class="card-body">
-        <span class="badge text-bg-primary mb-2">seminar <i class="bi bi-book-fill"></i></span>
+        <span class="badge text-bg-primary mb-2 font-poppins">seminar <i class="bi bi-book-fill"></i></span>
         <h5 class="card-title">
-          <a href="#">Control Management system in Javascript</a>
+          <a href="#">Simple Furniture Website Single Page Template in HTML and CSS</a>
         </h5>
         <p class="card-text">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio ipsam obcaecati doloribus officiis, nesciunt eum laborum nostrum error consectetur?
@@ -232,9 +236,9 @@
   <div class="col-sm-4 mb-3">
     <div class="card project-main-card">
       <div class="card-body">
-        <span class="badge text-bg-primary mb-2">project <i class="bi bi-book-fill"></i></span>
+        <span class="badge text-bg-primary mb-2 font-poppins">project <i class="bi bi-book-fill"></i></span>
         <h5 class="card-title">
-          <a href="#">Control Management system in Javascript</a>
+          <a href="#">Android Firebase Attendance System template in kotlin</a>
         </h5>
         <p class="card-text">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio ipsam obcaecati doloribus officiis, nesciunt eum laborum nostrum error consectetur?
@@ -271,9 +275,9 @@
   <div class="col-sm-4 mb-3">
     <div class="card project-main-card">
       <div class="card-body">
-        <span class="badge text-bg-primary mb-2">seminar <i class="bi bi-book-fill"></i></span>
+        <span class="badge text-bg-primary mb-2 font-poppins">seminar <i class="bi bi-book-fill"></i></span>
         <h5 class="card-title">
-          <a href="#">Control Management system in Javascript</a>
+          <a href="#">Online Shopping Store project in PHP</a>
         </h5>
         <p class="card-text">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio ipsam obcaecati doloribus officiis, nesciunt eum laborum nostrum error consectetur?
@@ -314,58 +318,64 @@
   <div class="container">
     <div class="row">
 
+        <!-- ProjectArch -->
         <div class="col-sm-6 p-3 mb-3">
           <a href="#">
-            <h4 class="text-white mt-3">ProjectArch</h4>
+            <h4 class="text-white mt-3"><i class="bi bi-box-seam-fill"></i> ProjectArch</h4>
           </a>
           <p class="text-white mt-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque et, ipsum laboriosam, voluptatibus consequatur distinctio suscipit recusandae cupiditate quam voluptatem eius animi
           </p>
         </div>
 
+        <!-- quick links -->
         <div class="col-sm-3 p-3 mb-3">
           <h5 class="text-white mt-3">Quick Links</h5>
           <ul>
             <li class="mt-3">
-              <i class="bi bi-chevron-right text-white"></i> <a href="#">Home</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Home</a>
             </li>
             <li class="mt-2">
-              <i class="bi bi-chevron-right text-white"></i> <a href="#">Projects</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Projects</a>
             </li>
             <li class="mt-2">
-              <i class="bi bi-chevron-right text-white"></i> <a href="#">Seminars</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Seminars</a>
             </li>
             <li class="mt-2">
-              <i class="bi bi-chevron-right text-white"></i> <a href="#">Register</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Register</a>
             </li>
             <li class="mt-2">
-              <i class="bi bi-chevron-right text-white"></i> <a href="#">Login</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Login</a>
             </li>
           </ul>
         </div>
 
+        <!-- social links -->
         <div class="col-sm-3 p-3 mb-3">
           <h5 class="text-white mt-3">Social Links</h5>
 
-          <a href="#">
-            <i class="bi bi-facebook text-white fs-4 mt-3"></i>
+          <a href="#" class="text-white social-links">
+            <i class="bi bi-facebook fs-4 mt-3"></i>
           </a>
 
-          <a href="#" class="fs-4 ms-3 mt-3">
-            <i class="bi bi-twitter text-white"></i>
+          <a href="#" class="fs-4 ms-3 mt-3 text-white social-links">
+            <i class="bi bi-twitter"></i>
           </a>
 
-          <a href="#" class="fs-4 ms-3 mt-3">
-            <i class="bi bi-linkedin text-white"></i>
+          <a href="#" class="fs-4 ms-3 mt-3 text-white social-links">
+            <i class="bi bi-linkedin"></i>
           </a>
 
-          <a href="#" class="fs-4 ms-3 mt-3">
-            <i class="bi bi-instagram text-white"></i>
+          <a href="#" class="fs-4 ms-3 mt-3 text-white social-links">
+            <i class="bi bi-instagram"></i>
           </a>
 
         </div>
 
     </div>
+  </div>
+  <div class="col-12 p-2 footer-bottom">
+    <p class="text-center text-white">Created with ❤ By <a href="#" class="dev-opt">Developer</a> &copy; CopyRight Reserved 2022</p>
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>

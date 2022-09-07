@@ -10,18 +10,59 @@
     text-decoration:none !important;
     list-style-type:none;
 }
+
 html{
     scroll-behavior: smooth;
 }
+
 body{
-    /* background-color:var(--deep-blue); */
-    /* font-family:"Sharp Sans No1", sans-serif; */
     overflow-x:hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* components */
+/* color */
+.deep-blue-color{
+    color:var(--deep-blue) !important;
+}
+.light-blue-color{
+    color:var(--light-blue) !important;
+}
+/* font family */
+.font-poppins{
+    font-family: 'Poppins', sans-serif;
 }
 
 /* NAVBAR SECTION STYLING */
 .navbar{
     background-color:var(--v-deep-blue);
+}
+.nav-link{
+    transition:all 500ms ease-in;
+}
+.nav-link:hover{
+    color:var(--light-blue) !important;
+}
+.register-btn{
+    background-color:var(--deep-blue);
+    color:#fff;
+    border:none;
+    transition:all 500ms ease-in;
+}
+.register-btn:hover{
+    background-color:var(--light-blue);
+    color:#fff;
+    /* transition:background-color 300ms ease-in; */
+}
+.login-btn{
+    background-color:var(--deep-blue);
+    color:#fff;   
+    border:none;
+    transition:all 500ms ease-in;
+}
+.login-btn:hover{
+    background-color:var(--light-blue);
+    color:#fff;
 }
 
 /* HEADER SECTION STYLING */
@@ -30,6 +71,20 @@ body{
     position:relative;
     background-color:var(--deep-blue);
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+}
+.header-text{
+    color:var(--light-blue);
+}
+.search-btn{
+    background-color:var(--v-deep-blue);
+    color:#fff;   
+    border:1px solid var(--v-deep-blue);
+    transition:all 500ms ease-in;
+}
+.search-btn:hover{
+    background-color:var(--light-blue);
+    color:#fff;
+    border:1px solid var(--light-blue);
 }
 .data-archival-img,.data-archival-img2{
     width:250px;
@@ -70,6 +125,27 @@ body{
 
 /* FOOTER SECTION STYLING */
 footer{
-    background-color:var(--v-deep-blue);
+    background-color:var(--deep-blue);
     box-sizing:border-box;
+}
+.quick-links{
+    transition:all 500ms ease-in;
+}
+.quick-links:hover{
+    color:var(--light-blue) !important;
+}
+.social-links{
+    transition:all 500ms ease-in;
+}
+.social-links:hover{
+    color:var(--light-blue) !important;
+}
+.footer-bottom{
+    background-color:var(--v-deep-blue);
+}
+.dev-opt{
+    transition:all 500ms ease-in;
+}
+.dev-opt:hover{
+    color:var(--light-blue) !important;
 }
