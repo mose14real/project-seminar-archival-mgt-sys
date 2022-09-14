@@ -24,9 +24,10 @@
 <!-- NAVBAR SECTION STARTS HERE -->
 <nav class="navbar navbar-expand-lg">
   <div class="container">
-    <h1 class="navbar-brand font-bold text-white " href="#"><i class="bi bi-box-seam-fill"></i> ProjectArch</h1>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <h1 class="navbar-brand font-bold text-white" href="#"><i class="bi bi-box-seam-fill"></i> ProjectArch</h1>
+    <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <li class="bi bi-list fs-1 text-white"></li>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
@@ -42,10 +43,10 @@
       </ul>
       <!-- register and login button wrapper -->
       <div>
-        <a href="" class="">
+        <a href="#" class="">
             <button class="btn btn-block shadow-none register-btn">Register</button>
         </a>
-        <a href="" class="ms-3 mt-2">
+        <a href="#" class="ms-3 mt-2">
             <button class="btn btn-block shadow-none login-btn">Login</button>
         </a>
       </div>
@@ -63,10 +64,10 @@
     <div class="mx-auto mt-3 col-8">
       <form>
       <div class="row">
-        <div class="col-8">
+        <div class="col-md-8 mb-3">
           <input type="search" class="form-control p-2" placeholder="Search Projects / Seminars" aria-label="First name">
         </div>
-        <div class="col-4">
+        <div class="col-md-4 mb-3">
           <button type="submit" class="btn btn-block p-2 w-100 search-btn">Search</button>
         </div>
       </div>
@@ -74,25 +75,24 @@
     </div>
     
 
-    <img src="{{ asset('img/data-archival.svg') }}" alt="" class="data-archival-img">
-    <img src="{{ asset('img/data-archival.svg') }}" alt="" class="data-archival-img2">
+    <img src="{{ asset('img/data-archival.svg') }}" alt="" class="data-archival-img d-none d-sm-none d-md-block">
+    <img src="{{ asset('img/data-archival.svg') }}" alt="" class="data-archival-img2 d-none d-sm-none d-md-block">
   </div>
 </header>
 
 <!-- PROJECT AND SEMINAR HERE -->
 <div class="project-and-seminar-section bg-white" id="projects">
   <div class="container">
-    <h1 class="text-center mt-5 deep-blue-color">Projects And Seminars</h1>
+    <h2 class="text-center mt-5 deep-blue-color">Projects And Seminars</h2>
     <p class="text-center mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus laborum optio neque minima, asperiores assumenda repellat explicabo et aut sit earum atque cupiditate nam voluptatibus nisi, porro quae aliquam harum modi dolor? Voluptatum repellat tempore repudiandae praesentium error totam magnam dolorem debitis, molestiae explicabo cum id maiores vel unde nostrum ad, earum sit minus? Consequatur, voluptas officiis consequuntur quos illum error! Exercitationem, pariatur beatae qui dolore facilis voluptates unde nesciunt vitae quod sint, non animi ducimus libero nobis numquam eum laborum. Quo consequuntur dicta odio quos corrupti eveniet sequi architecto nihil tenetur excepturi alias rem ab laudantium, repellendus quia sed!</p>
-    <div class="d-flex">
-
+    <div class="row">
       <!-- Ilustrations -->
-      <div class="col-4 p-2">
+      <div class="col-md-4 p-2">
         <img src="{{ asset('img/2.svg') }}" alt="" class="project-illustrations mt-5">
       </div>
 
       <!-- projects cards starts here -->
-      <div class="col-4 p-2">
+      <div class="col-md-4 p-2">
         <div class="card mt-5">
         <div class="card-header project-header">
           <h4 class="text-white">Projects</h4>
@@ -118,7 +118,7 @@
       </div>
 
       <!-- Seminars cards starts here -->
-      <div class="col-4 p-2">
+      <div class="col-md-4 p-2">
         <div class="card mt-5">
         <div class="card-header seminar-header">
           <h4 class="text-white">Seminars</h4>
@@ -146,6 +146,7 @@
         </div>
       </div>
     </div>
+
     </div>
   </div>
 </div>
@@ -153,9 +154,10 @@
 <!-- PROJECTS -->
 <div class="projects">
   <div class="container">
+  <h2 class="text-center mb-3 mt-5 deep-blue-color">Projects And Seminars Lists</h2>
   <div class="row">
   <!-- project card starts here -->
-  <div class="col-sm-4 mb-3">
+  <div class="col-md-4 mb-3">
     <div class="card project-main-card">
       <div class="card-body">
         <span class="badge text-bg-primary mb-2 font-poppins">project <i class="bi bi-book-fill"></i></span>
@@ -194,7 +196,7 @@
   <!-- ends here -->
 
   <!-- project card starts here -->
-  <div class="col-sm-4 mb-3">
+  <div class="col-md-4 mb-3">
     <div class="card project-main-card">
       <div class="card-body">
         <span class="badge text-bg-primary mb-2 font-poppins">seminar <i class="bi bi-book-fill"></i></span>
@@ -233,7 +235,7 @@
   <!-- ends here -->
 
   <!-- project card starts here -->
-  <div class="col-sm-4 mb-3">
+  <div class="col-md-4 mb-3">
     <div class="card project-main-card">
       <div class="card-body">
         <span class="badge text-bg-primary mb-2 font-poppins">project <i class="bi bi-book-fill"></i></span>
@@ -272,7 +274,7 @@
   <!-- ends here -->
 
   <!-- project card starts here -->
-  <div class="col-sm-4 mb-3">
+  <div class="col-md-4 mb-3">
     <div class="card project-main-card">
       <div class="card-body">
         <span class="badge text-bg-primary mb-2 font-poppins">seminar <i class="bi bi-book-fill"></i></span>
@@ -319,7 +321,7 @@
     <div class="row">
 
         <!-- ProjectArch -->
-        <div class="col-sm-6 p-3 mb-3">
+        <div class="col-md-6 p-3 mb-3">
           <a href="#">
             <h4 class="text-white mt-3"><i class="bi bi-box-seam-fill"></i> ProjectArch</h4>
           </a>
@@ -329,7 +331,7 @@
         </div>
 
         <!-- quick links -->
-        <div class="col-sm-3 p-3 mb-3">
+        <div class="col-md-3 p-3 mb-3">
           <h5 class="text-white mt-3">Quick Links</h5>
           <ul>
             <li class="mt-3">
@@ -351,7 +353,7 @@
         </div>
 
         <!-- social links -->
-        <div class="col-sm-3 p-3 mb-3">
+        <div class="col-md-3 p-3 mb-3">
           <h5 class="text-white mt-3">Social Links</h5>
 
           <a href="#" class="text-white social-links">

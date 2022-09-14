@@ -24,7 +24,7 @@
 <div class="registration-section">
   <div class="row">
     <!-- content register section starts here -->
-    <div class="col-sm-6 content-register">
+    <div class="col-md-6 content-register">
       <div class="overlay pt-4">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -39,32 +39,32 @@
         <p class="text-white">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, enim tempore facere iure voluptas minus expedita inventore odio! Facilis asperiores voluptatibus quos? Consequuntur aspernatur delectus veniam debitis? Ex esse magnam iure, beatae, totam vitae provident maiores reprehenderit perspiciatis eius expedita quod? Cum velit accusantium sequi unde 
         </p>
-        <a href="">
+        <a href="#">
           <button class="btn btn-block shadow-none mb-3 explore-project-btn">Explore More projects &nbsp;<i class="bi bi-arrow-right"></i></button>
         </a>
       </div>
     </div>
 
     <!-- form register section starts here -->
-    <div class="col-sm-6 pt-4 form-register">
+    <div class="col-md-6 pt-4 form-register">
       <h4 class="deep-blue-color">Registration</h4>
       <form class="mt-3">
         <div class="col-12 mb-3">
           <input type="text" class="form-control" placeholder="Full Name" aria-label="First name">
         </div>
-        <div class="row mb-3">
-          <div class="col">
+        <div class="row">
+          <div class="col-md-6 mb-3">
             <input type="text" class="form-control" placeholder="Matric Number" aria-label="First name">
           </div>
-          <div class="col">
+          <div class="col-md-6 mb-3">
             <input type="text" class="form-control" placeholder="Phone Number" aria-label="Last name">
           </div>
         </div>
-        <div class="row mb-3">
-          <div class="col">
+        <div class="row">
+          <div class="col-md-6 mb-3">
             <input type="text" class="form-control" placeholder="Supervisor" aria-label="First name">
           </div>
-          <div class="col">
+          <div class="col-md-6 mb-3">
             <input type="text" class="form-control" placeholder="Session" aria-label="Last name">
           </div>
         </div>
@@ -83,16 +83,19 @@
 
       <h4 class="mt-5 deep-blue-color">Login</h4>
       <form class="mt-3">
-        <div class="row mb-3">
-          <div class="col">
+        <div class="row">
+          <div class="col-md-6 mb-3">
               <input type="text" class="form-control" placeholder="Matric Number" aria-label="First name">
           </div>
-          <div class="col">
+          <div class="col-md-6 mb-3">
               <input type="password" class="form-control" placeholder="Password" aria-label="First name">
           </div>
         </div>
         <div class="col-12 mb-3">
           <button type="submit" class="btn btn-block w-100 login-page-btn">Login</button>
+          <p class="text-center mt-3">
+            <a href="#">Back To Home Page</a>
+          </p>
         </div>
       </form>
     </div>

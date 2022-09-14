@@ -9,6 +9,7 @@
 
 *{
     text-decoration:none !important;
+    box-sizing:border-box !important;
     list-style-type:none;
 }
 
@@ -17,7 +18,7 @@ html{
 }
 
 body{
-    overflow-x:hidden;
+    overflow-x:hidden !important;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -25,6 +26,9 @@ body{
 /* color */
 .deep-blue-color{
     color:var(--deep-blue) !important;
+}
+.bg-deep-blue{
+    background-color:var(--deep-blue) !important;
 }
 .light-blue-color{
     color:var(--light-blue) !important;
@@ -38,13 +42,31 @@ body{
 .navbar{
     background-color:var(--v-deep-blue);
 }
+.navbar-toggler-icon{
+    color:#fff !important;
+    /* background-color:#fff; */
+}
 .nav-link{
     transition:all 500ms ease-in;
 }
 .nav-link:hover{
     color:var(--light-blue) !important;
 }
-.register-btn{
+@media screen and (max-width:991px)
+{
+    .notification-wrapper{
+        margin-top:15px;
+    }
+}
+.notification{
+    border:1px solid white;
+    padding:4px;
+    top:3px;
+}
+.notification-bell{
+    cursor:pointer;
+}
+.register-btn,.register-btn:focus{
     background-color:var(--deep-blue);
     color:#fff;
     border:none;
@@ -55,13 +77,23 @@ body{
     color:#fff;
     /* transition:background-color 300ms ease-in; */
 }
-.login-btn{
+.login-btn,.login-btn:focus{
     background-color:var(--deep-blue);
     color:#fff;   
     border:none;
     transition:all 500ms ease-in;
 }
 .login-btn:hover{
+    background-color:var(--light-blue);
+    color:#fff;
+}
+.sign-out-btn{
+    background-color:var(--deep-blue);
+    color:#fff;   
+    border:none;
+    transition:all 500ms ease-in;
+}
+.sign-out-btn:hover{
     background-color:var(--light-blue);
     color:#fff;
 }
@@ -75,19 +107,25 @@ body{
     background-color:var(--deep-blue);
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
 }
+@media screen and (max-width:767px)
+{
+    .header-section{
+        padding:60px 10px;
+    }
+}
 .header-text{
     color:var(--light-blue);
 }
-.search-btn{
-    background-color:var(--v-deep-blue);
+.search-btn,.search-btn:focus{
+    background-color:var(--light-blue);
     color:#fff;   
-    border:1px solid var(--v-deep-blue);
+    border:1px solid var(--light-blue);
     transition:all 500ms ease-in;
 }
 .search-btn:hover{
-    background-color:var(--light-blue);
+    background-color:var(--v-deep-blue);
     color:#fff;
-    border:1px solid var(--light-blue);
+    border:1px solid var(--v-deep-blue);
 }
 .data-archival-img,.data-archival-img2{
     width:250px;
@@ -102,6 +140,51 @@ body{
 .data-archival-img2{
     bottom:40px;
     left:0;
+}
+
+/* PROJECT OVERVIEW */
+.project-overview{
+    min-height:100vh;
+}
+.project-overview-card{
+    background-color:var(--deep-blue);
+}
+.project-overview-badge{
+    background-color: var(--light-blue);
+    color: var(--deep-blue);
+}
+.project-overview-icon{
+    font-size:100px;
+}
+.project-overview-btn,.project-overview-btn:focus{
+    background-color:var(--light-blue);
+    color:#fff;
+    border:1px solid var(--light-blue);
+    transition:all 500ms ease-in;
+}
+.project-overview-btn:hover{
+    background-color:#fff;
+    color:var(--deep-blue);
+}
+
+/* STUDENT DATA TABLE */
+.edit-btn,.edit-btn:focus{
+    background-color:rgb(17, 204, 17);
+    color:#fff;
+    transition:all 500ms ease-in;
+}
+.edit-btn:hover{
+    background-color:rgb(12, 168, 12);
+    color:#fff;
+}
+.delete-btn,.delete-btn:focus{
+    background-color:rgb(247, 50, 50);
+    color:#fff;
+    transition:all 500ms ease-in;
+}
+.delete-btn:hover{
+    background-color:rgb(232, 35, 35);
+    color:#fff;
 }
 
 /* PROJECT AND SEMINAR SECTION STYLING */
@@ -127,6 +210,16 @@ body{
 }
 .project-card-footer{
     background-color:var(--light-blue);
+}
+.file-upload-btn,.file-upload-btn:focus{
+    background-color:var(--deep-blue);
+    color:#fff;
+    transition:all 500ms ease-in;
+}
+.file-upload-btn:hover{
+    background-color:var(--light-blue);
+    color:#fff;
+    border:1px solid var(--light-blue);
 }
 
 /* FOOTER SECTION STYLING */
@@ -163,6 +256,12 @@ footer{
     min-height:100vh;
     background-color:#fff;
 }
+@media screen and (max-width:767px)
+{
+    .registration-section{
+        padding-bottom:60px;
+    }
+}
 .content-register,.form-register{
     min-height:100vh;
 }
@@ -177,6 +276,12 @@ footer{
     background-position:top center;
     position:relative;
 }
+@media screen and (max-width:767px)
+{
+    .content-register{
+        display:none;
+    }
+}
 .overlay{
     width:100%;
     height:100%;
@@ -190,7 +295,7 @@ footer{
 .breadcrumb-item,.breadcrumb-item > a{
     color:#fff !important;
 }
-.explore-project-btn{
+.explore-project-btn,.explore-project-btn:focus{
     background-color:#fff;
     color:var(--deep-blue);
     border:none;
@@ -204,6 +309,18 @@ footer{
     padding-right:110px;
     padding-left:40px;
     box-sizing:border-box;
+}
+@media screen and (max-width:767px)
+{
+    .form-register{
+        padding-left:110px;
+    }
+}
+@media screen and (max-width:576px)
+{
+    .form-register{
+        padding:40px;
+    }
 }
 .register-page-btn,.login-page-btn{
     background-color:var(--deep-blue);
