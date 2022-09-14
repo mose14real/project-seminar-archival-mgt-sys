@@ -221,19 +221,6 @@
           </div>
         </div>
       </div>
-      <div class="card-footer project-card-footer">
-        <div class="row">
-          <div class="col">
-            <i class="bi bi-eye-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">4</span>
-          </div>
-          <div class="col">
-            <i class="bi bi-heart-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">10</span>
-          </div>
-          <div class="col">
-            <i class="bi bi-cloud-download-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">100</span>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <!-- ends here -->
@@ -257,19 +244,6 @@
           </div>
           <div class="col">
             <i class="bi bi-alarm-fill fs-6"></i> <span class="ml-2 fs-6">2022-09-05</span>
-          </div>
-        </div>
-      </div>
-      <div class="card-footer project-card-footer">
-        <div class="row">
-          <div class="col">
-            <i class="bi bi-eye-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">4</span>
-          </div>
-          <div class="col">
-            <i class="bi bi-heart-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">10</span>
-          </div>
-          <div class="col">
-            <i class="bi bi-cloud-download-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">100</span>
           </div>
         </div>
       </div>
@@ -299,19 +273,6 @@
           </div>
         </div>
       </div>
-      <div class="card-footer project-card-footer">
-        <div class="row">
-          <div class="col">
-            <i class="bi bi-eye-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">4</span>
-          </div>
-          <div class="col">
-            <i class="bi bi-heart-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">10</span>
-          </div>
-          <div class="col">
-            <i class="bi bi-cloud-download-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">100</span>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <!-- ends here -->
@@ -335,19 +296,6 @@
           </div>
           <div class="col">
             <i class="bi bi-alarm-fill fs-6"></i> <span class="ml-2 fs-6">2022-09-05</span>
-          </div>
-        </div>
-      </div>
-      <div class="card-footer project-card-footer">
-        <div class="row">
-          <div class="col">
-            <i class="bi bi-eye-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">4</span>
-          </div>
-          <div class="col">
-            <i class="bi bi-heart-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">10</span>
-          </div>
-          <div class="col">
-            <i class="bi bi-cloud-download-fill fs-6 text-white"></i> <span class="ml-2 fs-6 text-white">100</span>
           </div>
         </div>
       </div>

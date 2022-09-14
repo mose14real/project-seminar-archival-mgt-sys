@@ -208,9 +208,6 @@ body{
 .project-main-card{
     background-color:var(--v-light-blue);
 }
-.project-card-footer{
-    background-color:var(--light-blue);
-}
 .file-upload-btn,.file-upload-btn:focus{
     background-color:var(--deep-blue);
     color:#fff;

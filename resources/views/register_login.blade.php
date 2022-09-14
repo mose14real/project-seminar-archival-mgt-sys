@@ -65,7 +65,7 @@
             <input type="text" class="form-control" placeholder="Supervisor" aria-label="First name">
           </div>
           <div class="col-md-6 mb-3">
-            <input type="text" class="form-control" placeholder="Session" aria-label="Last name">
+            <input type="text" class="form-control" placeholder="Session i.e 2021/2022" aria-label="Last name">
           </div>
         </div>
         <div class="col-12 mb-3">
@@ -73,6 +73,9 @@
         </div>
         <div class="col-12 mb-3">
           <input type="text" class="form-control" placeholder="Seminar Topic" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <input type="password" class="form-control" placeholder="Password" aria-label="First name">
         </div>
         <div class="col-12 mb-3">
           <button type="submit" class="btn btn-block w-100 register-page-btn">Register</button>
