@@ -16,6 +16,10 @@ class Project extends Model
      */
     protected $fillable = [
         'project_topic',
+        'project_desc',
+        'project_type',
+        'project_members',
+        'project_file_path',
     ];
 
     /**

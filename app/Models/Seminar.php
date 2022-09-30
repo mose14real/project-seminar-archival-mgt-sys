@@ -16,6 +16,8 @@ class Seminar extends Model
      */
     protected $fillable = [
         'seminar_topic',
+        'seminar_desc',
+        'seminar_file_path',
     ];
 
     /**
