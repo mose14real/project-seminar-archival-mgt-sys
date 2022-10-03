@@ -20,8 +20,6 @@
       <title>Project & Seminar Archival Mgt Sys</title>
   </head>
   <body>
-
-<<<<<<< HEAD
 <!-- NAVBAR SECTION STARTS HERE -->
 <nav class="navbar navbar-expand-lg" id="navigation-bar">
   <div class="container">
@@ -297,7 +295,6 @@
             </li>
             <li class="mt-2">
               <i class="bi bi-chevron-right text-white"></i> <a href="{{ url('register') }}" class="text-white quick-links">Login</a>
-=======
     <!-- NAVBAR SECTION STARTS HERE -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
@@ -316,7 +313,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link text-white " href="#">Seminars</a>
->>>>>>> 5a42f7206cf8a6bf6a37ccbb477dde88e285ddad
             </li>
           </ul>
           <!-- register and login button wrapper -->
