@@ -22,7 +22,7 @@
 <body>
 
 <!-- NAVBAR SECTION STARTS HERE -->
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg" id="navigation-bar">
   <div class="container">
     <h1 class="navbar-brand font-bold text-white " href="#"><i class="bi bi-box-seam-fill"></i> ProjectArch</h1>
     <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,17 +31,21 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
         <li class="nav-item">
-          <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+          <a class="nav-link text-white active me-2" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white " href="#projects">Projects</a>
+        <li class="nav-item d-flex">
+          <input type="search" class="form-control shadow-none" placeholder="Search Projects/Seminars" aria-label="">
+          <button type="submit" class="btn btn-block ms-2 search-btn"><i class="bi bi-search"></i></button>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white " href="#">Seminars</a>
+        <!-- <li class="nav-item">
+          <button type="submit" class="btn btn-block ms-2 search-btn"><i class="bi bi-search"></i></button>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link text-white " href="#projects">Seminars</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white " href="#">Upload Projects / Seminars</a>
-        </li>
+        </li> -->
       </ul>
       <!-- register and login button wrapper -->
       <!-- <div>
@@ -59,7 +63,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#"><i class="bi bi-person-badge-fill"></i> Profile</a></li>
-            <li><a class="dropdown-item" href="#project-seminar"><i class="bi bi-journals"></i> My projects</a></li>
+            <!-- <li><a class="dropdown-item" href="#project-seminar"><i class="bi bi-journals"></i> My projects</a></li> -->
             <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->
             <li><hr class="dropdown-divider"></li>
             <li><a class="" href="#"><button class="btn btn-block d-block mx-auto sign-out-btn">Sign Out</button></a></li>
@@ -102,7 +106,7 @@
     <p class="mt-3 text-center text-white">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ducimus recusandae voluptatem, commodi odio optio rem, aperiam odit veniam saepe amet quam atque expedita officia nihil reiciendis? Provident cumque molestiae libero minima quasi corporis tempora error necessitatibus officiis, doloribus deleniti ipsum mollitia cum ex blanditiis illum architecto sequi aut impedit, voluptate atque alias magnam expedita ab? Eligendi facere et autem, sunt possimus minus ex, iure tempore nam fuga harum ut officiis cupiditate vel cum
     </p>
-    <div class="mx-auto mt-3 col-8">
+    <!-- <div class="mx-auto mt-3 col-8">
       <form>
       <div class="row">
         <div class="col-md-8 mb-3">
@@ -113,7 +117,7 @@
         </div>
       </div>
       </form>
-    </div>
+    </div> -->
     
 
     <img src="{{ asset('img/data-archival.svg') }}" alt="" class="data-archival-img d-none d-sm-none d-md-block">
@@ -122,217 +126,337 @@
 </header>
 
 <!-- PROJECT AND SEMINAR HERE -->
-<div class="project-and-seminar-section bg-white" id="projects">
+<div class="project-overview" id="projects-overview">
   <div class="container">
-    <h1 class="text-center mt-5 deep-blue-color">Projects And Seminars</h1>
-    <p class="text-center mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus laborum optio neque minima, asperiores assumenda repellat explicabo et aut sit earum atque cupiditate nam voluptatibus nisi, porro quae aliquam harum modi dolor? Voluptatum repellat tempore repudiandae praesentium error totam magnam dolorem debitis, molestiae explicabo cum id maiores vel unde nostrum ad, earum sit minus? Consequatur, voluptas officiis consequuntur quos illum error! Exercitationem, pariatur beatae qui dolore facilis voluptates unde nesciunt vitae quod sint, non animi ducimus libero nobis numquam eum laborum. Quo consequuntur dicta odio quos corrupti eveniet sequi architecto nihil tenetur excepturi alias rem ab laudantium, repellendus quia sed!</p>
-    <div class="d-flex">
-      <div class="row">
-      <!-- Ilustrations -->
-        <div class="col-md-4 p-2">
-          <img src="{{ asset('img/2.svg') }}" alt="" class="project-illustrations mt-5">
+    <h2 class="text-center mt-5">Projects And Seminar Overview</h2>
+    <div class="row mt-5">
+        <div class="col-md-4 mb-3">
+          <div class="card project-overview-card">
+                  <div class="card-body">
+                      <span class="badge project-overview-badge mb-2 font-poppins">Document status</span>
+                      <p class="card-text text-center text-white">
+                      <i class="bi bi-check-lg project-overview-icon"></i>
+                      </p>
+                      <h1 class="card-title text-center text-white">Approved</h1>
+                      <button class="btn btn-block w-100 project-overview-btn font-bold" disabled data-bs-toggle="modal" data-bs-target="#upload-project-modal">Register New Project</button>
+                  </div>
+              </div> 
         </div>
-
-        <!-- projects cards starts here -->
-        <div class="col-md-4 p-2">
-          <div class="card mt-5">
-          <div class="card-header project-header">
-            <h4 class="text-white">Projects</h4>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <a href="#">online exam project in PHP</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#">PSimple Furniture Website Single Page Template</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#">Android Firebase Attendance System template in kotlin</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#">Watch Trailer Responsive Website template in WEB</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#">online exam project in PHP</a>
-            </li>
-          </ul>
-          </div>
+        <div class="col-md-4 mb-3">
+            <div class="card project-overview-card">
+                <div class="card-body">
+                    <span class="badge project-overview-badge mb-2 font-poppins">Project</span>
+                    <p class="card-text text-center text-white">
+                    <i class="bi bi-journal-text project-overview-icon"></i>
+                    </p>
+                    <h1 class="card-title text-center text-white">0</h1>
+                    <button class="btn btn-block w-100 project-overview-btn font-bold" data-bs-toggle="modal" data-bs-target="#project-registration-modal">Register New Project</button>
+                </div>
+            </div>      
         </div>
-
-        <!-- Seminars cards starts here -->
-        <div class="col-md-4 p-2">
-          <div class="card mt-5">
-          <div class="card-header seminar-header">
-            <h4 class="text-white">Seminars</h4>
-          </div>
-          <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-              <a href="#">eCommerce Website project in PHP</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#">Online Shopping Store project in PHP</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#">House Decor template in HTML CSS</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#">Online Shopping Store project in PHP</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#">Watch Trailer Responsive Website template in WEB</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#">online exam project in PHP</a>
-            </li>
-          </ul>
-          </div>
+        <div class="col-md-4 mb-3">
+            <div class="card project-overview-card">
+                <div class="card-body">
+                    <span class="badge project-overview-badge mb-2 font-poppins">Seminar</span>
+                    <p class="card-text text-center text-white">
+                    <i class="bi bi-journal-text project-overview-icon"></i>
+                    </p>
+                    <h1 class="card-title text-center text-white">0</h1>
+                    <button class="btn btn-block w-100 project-overview-btn font-bold" data-bs-toggle="modal" data-bs-target="#seminar-registration-modal">Register New Seminar</button>
+                </div>
+            </div>
         </div>
-      </div>
-
     </div>
+    <div class="row mt-5">
+        <div class="col-md-4 mb-3">
+            <div class="card project-overview-card">
+                <div class="card-body">
+                    <span class="badge project-overview-badge mb-2 font-poppins">Project upload</span>
+                    <p class="card-text text-center text-white">
+                    <i class="bi bi-cloud-arrow-up project-overview-icon"></i>
+                    </p>
+                    <h1 class="card-title text-center text-white">0</h1>
+                    <button class="btn btn-block w-100 project-overview-btn font-bold" data-bs-toggle="modal" data-bs-target="#project-upload-modal">+ Add New Project</button>
+                </div>
+            </div>      
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card project-overview-card">
+                <div class="card-body">
+                    <span class="badge project-overview-badge mb-2 font-poppins">Seminar upload</span>
+                    <p class="card-text text-center text-white">
+                    <i class="bi bi-cloud-arrow-up project-overview-icon"></i>
+                    </p>
+                    <h1 class="card-title text-center text-white">0</h1>
+                    <button class="btn btn-block w-100 project-overview-btn font-bold" data-bs-toggle="modal" data-bs-target="#seminar-upload-modal">+ Add New Seminar</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+<!-- PROJECT REGISTRATION MODAL SECTION STARTS HERE -->
+<div class="modal fade" id="project-registration-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Project Registration</h5>
+                  <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form class="mt-3">
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Project Topic" aria-label="">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" id="" rows="3" placeholder="Project Description"></textarea>
+        </div>
+        <div class="col-12 mb-3">
+          <select class="form-select form-select-md mb-3 project-type-user" aria-label=".form-select-lg example">
+            <option>-- Select Project Type --</option>
+            <option value="individual">Individual</option>
+            <option value="group">Group</option>
+          </select>
+        </div>
+        <div class="mb-3 d-none group-details-user">
+          <textarea class="form-control" id="" rows="3" placeholder="add group matric numbers..."></textarea>
+        </div>
+        <div class="col-12 mb-3">
+          <button type="submit" class="btn btn-block float-end register-page-btn">Register</button>
+          <div class="clearfix"></div>
+        </div>
+      </form>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- ENDS HERE -->
+
+<!-- SEMINAR REGISTRATION MODAL SECTION STARTS HERE -->
+<div class="modal fade" id="seminar-registration-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Seminar Registration</h5>
+                  <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form class="mt-3">
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Seminar Topic" aria-label="">
+        </div>
+        <div class="mb-3 group-details">
+          <textarea class="form-control" id="" rows="3" placeholder="Seminar Description"></textarea>
+        </div>       
+        <div class="col-12 mb-3">
+          <button type="submit" class="btn btn-block float-end register-page-btn">Register</button>
+          <div class="clearfix"></div>
+        </div>
+      </form>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- ENDS HERE -->
+
+<!-- PROJECT UPLOAD MODAL SECTION STARTS HERE -->
+<div class="modal fade" id="project-upload-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Upload Project Area</h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form class="mt-3">
+        <div class="col-12 mb-3">
+          <input type="file" class="form-control" placeholder="Password" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <button type="submit" class="btn btn-block float-end register-page-btn">Upload Project</button>
+          <div class="clearfix"></div>
+        </div>
+      </form>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- ENDS HERE -->
+
+<!-- SEMINAR UPLOAD MODAL SECTION STARTS HERE -->
+<div class="modal fade" id="seminar-upload-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Upload Seminar Area</h5>
+                  <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form class="mt-3">      
+        <div class="col-12 mb-3">
+          <input type="file" class="form-control" placeholder="" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <button type="submit" class="btn btn-block float-end register-page-btn">Upload Seminar</button>
+          <div class="clearfix"></div>
+        </div>
+      </form>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- ENDS HERE -->
+
+<!-- PROJECT TABLE DATA STARTS HERE -->
+<div class="container mt-5">
+<div class="row">
+  <div class="col-sm-6">
+  <h4>Project Data Table</h4>
+  <table class="table table-bordered mb-5">
+        <tbody>
+            <tr>
+                <th scope="row">Project Topic</th>
+                <td>Simple Furniture Website Single Page Template in HTML and CSS</td>
+            </tr>
+            <tr>
+                <th scope="row">Project Description</th>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio ipsam obcaecati doloribus officiis, nesciunt eum laborum nostrum error consectetur?</td>
+            </tr>
+            <tr>
+                <th scope="row">Project Type</th>
+                <td>Individual</td>
+            </tr>
+            <tr>
+                <th scope="row">Student Matric Number</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">File</th>
+                <td>
+                  <a href="#">Simple Furniture Website Single Page Template in HTML and CSS</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Action</th>
+                <td>
+                  <button class="btn btn-block edit-btn w-25" data-bs-toggle="modal" data-bs-target="#project-edit-registration-modal"><!--<i class="bi bi-pencil-square"></i>-->Edit</button>
+                  <button class="btn btn-block edit-btn w-25" data-bs-toggle="modal" data-bs-target="#student-data-modal" download=""><!--<i class="bi bi-pencil-square"></i>-->Download</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+  <div class="col-sm-6">
+  <h4>Seminar Data Table</h4>
+  <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <th scope="row">Seminar Topic</th>
+                <td>Android Firebase Attendance System template in kotlin</td>
+            </tr>
+            <tr>
+                <th scope="row">Seminar Description</th>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio ipsam obcaecati doloribus officiis, nesciunt eum laborum nostrum error consectetur?</td>
+            </tr>
+            <tr>
+                <th scope="row">Student Matric Number</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">File</th>
+                <td>
+                  <a href="#">Android Firebase Attendance System template in kotlin</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Action</th>
+                <td>
+                  <button class="btn btn-block edit-btn w-25" data-bs-toggle="modal" data-bs-target="#seminar-edit-registration-modal"><!--<i class="bi bi-pencil-square"></i>-->Edit</button>
+                  <button class="btn btn-block edit-btn w-25" data-bs-toggle="modal" data-bs-target="#student-data-modal" download=""><!--<i class="bi bi-pencil-square"></i>-->Download</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
   </div>
 </div>
 
-<!-- PROJECTS -->
-<div class="projects" id="project-seminar">
-  <div class="container">
-    <h2 class="text-center deep-blue-color mt-5 mb-5">My projects and seminars <i class="bi bi-journal"></i></h2>
-  <div class="row">
-  <!-- project card starts here -->
-  <div class="col-md-4 mb-3">
-    <div class="card project-main-card">
-      <div class="card-body">
-        <span class="badge text-bg-primary mb-2 font-poppins">project <i class="bi bi-book-fill"></i></span>
-        <h5 class="card-title">
-          <a href="#">Control Management system in Javascript</a>
-        </h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio ipsam obcaecati doloribus officiis, nesciunt eum laborum nostrum error consectetur?
-        </p>
-        <div class="row mb-3">
-          <div class="col">
-            <a href="#">
-              <i class="bi bi-person-circle fs-6"></i> <span class="ml-2 fs-6">Ariyibi</span>
-            </a>
-          </div>
-          <div class="col">
-            <i class="bi bi-alarm-fill fs-6"></i> <span class="ml-2 fs-6">2022-09-05</span>
-          </div>
+<!-- PROJECT REGISTRATION EDIT MODAL SECTION STARTS HERE -->
+<div class="modal fade" id="project-edit-registration-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Project Modification</h5>
+                  <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form class="mt-3">
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Project Topic" aria-label="">
         </div>
-      </div>
+        <div class="mb-3">
+          <textarea class="form-control" id="" rows="3" placeholder="Project Description"></textarea>
+        </div>
+        <div class="col-12 mb-3">
+          <select class="form-select form-select-md mb-3 project-type-edit-user" aria-label=".form-select-lg example">
+            <option>-- Select Project Type --</option>
+            <option value="individual">Individual</option>
+            <option value="group">Group</option>
+          </select>
+        </div>
+        <div class="mb-3 d-none group-details-edit-user">
+          <textarea class="form-control" id="" rows="3" placeholder="add group matric numbers..."></textarea>
+        </div>
+        <div class="col-12 mb-3">
+          <button type="submit" class="btn btn-block float-end register-page-btn">Edit Project</button>
+          <div class="clearfix"></div>
+        </div>
+      </form>
+            </div>
+        </div>
     </div>
-  </div>
-  <!-- ends here -->
+</div> 
+<!-- ENDS HERE -->
 
-  <!-- project card starts here -->
-  <div class="col-md-4 mb-3">
-    <div class="card project-main-card">
-      <div class="card-body">
-        <span class="badge text-bg-primary mb-2 font-poppins">seminar <i class="bi bi-book-fill"></i></span>
-        <h5 class="card-title">
-          <a href="#">Simple Furniture Website Single Page Template in HTML and CSS</a>
-        </h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio ipsam obcaecati doloribus officiis, nesciunt eum laborum nostrum error consectetur?
-        </p>
-        <div class="row mb-3">
-          <div class="col">
-            <a href="#">
-              <i class="bi bi-person-circle fs-6"></i> <span class="ml-2 fs-6">Ariyibi</span>
-            </a>
-          </div>
-          <div class="col">
-            <i class="bi bi-alarm-fill fs-6"></i> <span class="ml-2 fs-6">2022-09-05</span>
-          </div>
+<!-- SEMINAR REGISTRATION EDIT MODAL SECTION STARTS HERE -->
+<div class="modal fade" id="seminar-edit-registration-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Seminar Modification</h5>
+                  <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form class="mt-3">
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Seminar Topic" aria-label="">
         </div>
-      </div>
+        <div class="mb-3 group-details">
+          <textarea class="form-control" id="" rows="3" placeholder="Seminar Description"></textarea>
+        </div>       
+        <div class="col-12 mb-3">
+          <button type="submit" class="btn btn-block float-end register-page-btn">Edit Seminar</button>
+          <div class="clearfix"></div>
+        </div>
+      </form>
+            </div>
+        </div>
     </div>
-  </div>
-  <!-- ends here -->
+</div> 
+<!-- ENDS HERE -->
 
-  <!-- project card starts here -->
-  <div class="col-md-4 mb-3">
-    <div class="card project-main-card">
-      <div class="card-body">
-        <span class="badge text-bg-primary mb-2 font-poppins">project <i class="bi bi-book-fill"></i></span>
-        <h5 class="card-title">
-          <a href="#">Android Firebase Attendance System template in kotlin</a>
-        </h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio ipsam obcaecati doloribus officiis, nesciunt eum laborum nostrum error consectetur?
-        </p>
-        <div class="row mb-3">
-          <div class="col">
-            <a href="#">
-              <i class="bi bi-person-circle fs-6"></i> <span class="ml-2 fs-6">Ariyibi</span>
-            </a>
-          </div>
-          <div class="col">
-            <i class="bi bi-alarm-fill fs-6"></i> <span class="ml-2 fs-6">2022-09-05</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ends here -->
-
-  <!-- project card starts here -->
-  <div class="col-md-4 mb-3">
-    <div class="card project-main-card">
-      <div class="card-body">
-        <span class="badge text-bg-primary mb-2 font-poppins">seminar <i class="bi bi-book-fill"></i></span>
-        <h5 class="card-title">
-          <a href="#">Online Shopping Store project in PHP</a>
-        </h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio ipsam obcaecati doloribus officiis, nesciunt eum laborum nostrum error consectetur?
-        </p>
-        <div class="row mb-3">
-          <div class="col">
-            <a href="#">
-              <i class="bi bi-person-circle fs-6"></i> <span class="ml-2 fs-6">Ariyibi</span>
-            </a>
-          </div>
-          <div class="col">
-            <i class="bi bi-alarm-fill fs-6"></i> <span class="ml-2 fs-6">2022-09-05</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ends here -->
+<!-- PROJECT AND SEMINAR HERE -->
+<div class="" id="projects">
 </div>
+
   </div>
 </div>
 
-<!-- UPLOAD PROJECTS AND SEMINAR SECTION STARTS HERE -->
-<div class="upload-projects" id="upload-projects">
-  <div class="container pt-3 pb-3">
-  <h2 class="text-center deep-blue-color mt-5">Upload Projects / Seminars </h2>
-  <p class="text-center">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque distinctio, laboriosam aut error obcaecati atque corporis beatae, placeat autem harum cupiditate aperiam ab illum. Maxime nostrum, reiciendis molestiae alias nesciunt quod labore esse cum illum natus odit quas quidem non laborum doloremque dignissimos minima incidunt recusandae ullam aperiam? Ducimus quaerat aliquam accusantium molestiae aspernatur ipsam nihil adipisci nesciunt eum et vel tenetur voluptas, eligendi laborum libero voluptatem quod? Veniam, dolore sapiente quaerat reprehenderit nihil cum corporis eos amet incidunt nemo?
-  </p>
-  <form action="">
-    <div class="row mb-3">
-      <div class="col-sm-8">
-        <input type="file" class="form-control" value="Matric Number" aria-label="First name">
-      </div>
-      <div class="col-sm-4">
-        <button type="submit" class="form-control btn btn-block file-upload-btn">Upload</button>
-      </div>
-    </div>
-  </form>
-  </div>
-</div>
 <!-- FOOTER SECTION -->
 <footer class="mt-5">
   <div class="container">
     <div class="row">
-
         <!-- ProjectArch -->
         <div class="col-md-6 p-3 mb-3">
-          <a href="#">
+          <a href="#navigation-bar">
             <h4 class="text-white mt-3"><i class="bi bi-box-seam-fill"></i> ProjectArch</h4>
           </a>
           <p class="text-white mt-3">
@@ -348,16 +472,16 @@
               <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Home</a>
             </li>
             <li class="mt-2">
-              <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Projects</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="#projects" class="text-white quick-links">Projects</a>
             </li>
             <li class="mt-2">
-              <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Seminars</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="#projects" class="text-white quick-links">Seminars</a>
             </li>
             <li class="mt-2">
-              <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Register</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="{{ url('register') }}" class="text-white quick-links">Register</a>
             </li>
             <li class="mt-2">
-              <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Login</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="{{ url('register') }}" class="text-white quick-links">Login</a>
             </li>
           </ul>
         </div>
@@ -391,5 +515,32 @@
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+<script>
+const projectTypeUser = document.querySelector('.project-type-user');
+const groupDetailsUser = document.querySelector('.group-details-user');
+const projectTypeEditUser  = document.querySelector('.project-type-edit-user');
+const groupDetailsEditUser  = document.querySelector('.group-details-edit-user');
+projectTypeUser.addEventListener('click', (event)=>{
+    // alert()
+    event.preventDefault();
+    if(projectTypeUser.value == 'group')
+    {
+        groupDetailsUser.classList.remove('d-none');
+    }else if(projectTypeUser.value == 'individual'){
+        groupDetailsUser.classList.add('d-none');
+    }
+})
+projectTypeEditUser.addEventListener('click', (event)=>{
+    // alert()
+    event.preventDefault();
+    if(projectTypeEditUser.value == 'group')
+    {
+        groupDetailsEditUser.classList.remove('d-none');
+    }else if(projectTypeEditUser.value == 'individual'){
+        groupDetailsEditUser.classList.add('d-none');
+    }
+})
+</script>
 </body>
 </html>
