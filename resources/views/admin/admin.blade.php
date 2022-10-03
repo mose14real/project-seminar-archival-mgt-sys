@@ -134,7 +134,7 @@
                     <i class="bi bi-mortarboard-fill project-overview-icon"></i>
                     </p>
                     <h1 class="card-title text-center text-white">34</h1>
-                    <button class="btn btn-block w-100 project-overview-btn font-bold">+ Add New Student</button>
+                    <button class="btn btn-block w-100 project-overview-btn font-bold" data-bs-toggle="modal" data-bs-target="#add-student-modal">+ Add New Student</button>
                 </div>
             </div>
         </div>
@@ -146,7 +146,7 @@
                     <i class="bi bi-journal project-overview-icon"></i>
                     </p>
                     <h1 class="card-title text-center text-white">300</h1>
-                    <button class="btn btn-block w-100 project-overview-btn font-bold">+ Add New Project</button>
+                    <button class="btn btn-block w-100 project-overview-btn font-bold" data-bs-toggle="modal" data-bs-target="#upload-project-modal">+ Add New Project</button>
                 </div>
             </div>      
         </div>
@@ -163,6 +163,108 @@
             </div>
         </div>
     </div>
+
+<!-- ADD STUDENT MODAL SECTION STARTS HERE -->
+<div class="modal fade" id="add-student-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Add New Student</h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form class="mt-3">
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Full Name" aria-label="First name">
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Matric Number" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Phone Number" aria-label="Last name">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Supervisor" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Session i.e 2021/2022" aria-label="Last name">
+          </div>
+        </div>
+        <div class="col-12 mb-3">
+          <select class="form-select form-select-md mb-3 project-type" aria-label=".form-select-lg example">
+            <option>-- Select Project Type --</option>
+            <option value="individual">Individual</option>
+            <option value="group">Group</option>
+          </select>
+        </div>
+        <div class="mb-3 d-none group-details">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="add group matric numbers..."></textarea>
+        </div>
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Project Topic" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Seminar Topic" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Password" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <button type="submit" class="btn btn-block float-end register-page-btn">Add +</button>
+          <div class="clearfix"></div>
+        </div>
+      </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ENDS HERE -->
+
+<!-- UPLOAD PROJECTS AND SEMINARS MODAL SECTION STARTS HERE -->
+<div class="modal fade" id="upload-project-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Upload Project And Seminar</h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form class="mt-3">
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Full Name" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <select class="form-select form-select-md mb-3 project-type" aria-label=".form-select-lg example">
+            <option>-- Select Project Type --</option>
+            <option value="individual">Individual</option>
+            <option value="group">Group</option>
+          </select>
+        </div>
+        <div class="mb-3 d-none group-details">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="add group matric numbers..."></textarea>
+        </div>
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Project Topic" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Seminar Topic" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <input type="file" class="form-control" placeholder="Password" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <button type="submit" class="btn btn-block float-end register-page-btn">Upload Project / Seminar</button>
+          <div class="clearfix"></div>
+        </div>
+      </form>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- ENDS HERE -->
 
     <!-- student data table -->
     <div class="col-12">
@@ -189,28 +291,28 @@
                 <button class="btn btn-block delete-btn"><i class="bi bi-trash3"></i></button>
               </td>
             </tr>
-            <!-- <tr class="">
-              <td scope="row">Adebayo Aremu Abere</td>
-                <td>Tour Management System</td>
-                <td>Not Approved</td>
+            <tr class="">
+              <td scope="row"></td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td>
-                  <button class="btn btn-block edit-btn"><i class="bi bi-pencil-square"></i></button>
-                  <button class="btn btn-block delete-btn"><i class="bi bi-trash3"></i></button>
+                  <button class="btn btn-block bg-deep-blue text-white" data-bs-toggle="modal" data-bs-target="#add-student-to-table-modal">+ Add new student</button>
                 </td>
-            </tr> -->
+            </tr>
         </tbody>
         </table>
       </div>
     </div>
     <!-- ends here -->
 
-    <!-- EDIT STUDENTS DETAILS MODAL STARTS HERE -->
-<div class="modal fade" id="student-data-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+<!-- ADD NEW STUDENT TO TABLE -->
+<div class="modal fade" id="add-student-to-table-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalTitleId">Edit Student Data</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="modalTitleId">Add New Student</h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
             <form class="mt-3">
@@ -230,14 +332,86 @@
             <input type="text" class="form-control" placeholder="Supervisor" aria-label="First name">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Session" aria-label="Last name">
+            <input type="text" class="form-control" placeholder="Session i.e 2021/2022" aria-label="Last name">
           </div>
+        </div>
+        <div class="col-12 mb-3">
+          <select class="form-select form-select-md mb-3 project-type" aria-label=".form-select-lg example">
+            <option>-- Select Project Type --</option>
+            <option value="individual">Individual</option>
+            <option value="group">Group</option>
+          </select>
+        </div>
+        <div class="mb-3 d-none group-details">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="add group matric numbers..."></textarea>
         </div>
         <div class="col-12 mb-3">
           <input type="text" class="form-control" placeholder="Project Topic" aria-label="First name">
         </div>
         <div class="col-12 mb-3">
           <input type="text" class="form-control" placeholder="Seminar Topic" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Password" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <button type="submit" class="btn btn-block float-end register-page-btn">Add +</button>
+          <div class="clearfix"></div>
+        </div>
+      </form>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- ENDS HERE -->
+
+  <!-- EDIT STUDENTS DETAILS MODAL STARTS HERE -->
+<div class="modal fade" id="student-data-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Edit Student Data</h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form class="mt-3">
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Full Name" aria-label="First name">
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Matric Number" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Phone Number" aria-label="Last name">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Supervisor" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Session i.e 2021/2022" aria-label="Last name">
+          </div>
+        </div>
+        <div class="col-12 mb-3">
+          <select class="form-select form-select-md mb-3 project-type" aria-label=".form-select-lg example">
+            <option>-- Select Project Type --</option>
+            <option value="individual">Individual</option>
+            <option value="group">Group</option>
+          </select>
+        </div>
+        <div class="mb-3 d-none group-details">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="add group matric numbers..."></textarea>
+        </div>
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Project Topic" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Seminar Topic" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Password" aria-label="First name">
         </div>
         <div class="col-12 mb-3">
           <button type="submit" class="btn btn-block float-end register-page-btn">Edit</button>
@@ -271,9 +445,18 @@
               <td>Library Management System</td>
               <td>Approved</td>
               <td>
-                <button class="btn btn-block edit-btn" data-bs-toggle="modal" data-bs-target="#projects-modal"><i class="bi bi-pencil-square"></i></button>
+                <button class="btn btn-block edit-btn" data-bs-toggle="modal" data-bs-target="#edit-upload-project-to-table-modal"><i class="bi bi-pencil-square"></i></button>
                 <button class="btn btn-block delete-btn"><i class="bi bi-trash3"></i></button>
               </td>
+            </tr>
+            <tr class="">
+              <td scope="row"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="btn btn-block bg-deep-blue text-white" data-bs-toggle="modal" data-bs-target="#upload-project-to-table-modal">+ Add New Project/Seminar</button>
+                </td>
             </tr>
             <!-- <tr class="">
               <td scope="row">Adebayo Aremu Abere</td>
@@ -290,40 +473,38 @@
     </div>
     <!-- ends here -->
 
-    <!-- EDIT PROJECTS DETAILS MODAL STARTS HERE -->
-    <div class="modal fade" id="projects-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+
+<!-- EDIT UPLOADED PROJECTS AND SEMINARS MODAL SECTION STARTS HERE -->
+<div class="modal fade" id="edit-upload-project-to-table-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalTitleId">Edit Student Data</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="modalTitleId">Edit Uploaded Project And Seminar</h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
             <form class="mt-3">
         <div class="col-12 mb-3">
           <input type="text" class="form-control" placeholder="Full Name" aria-label="First name">
         </div>
-        <div class="row mb-3">
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Matric Number" aria-label="First name">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Phone Number" aria-label="Last name">
-          </div>
+        <div class="col-12 mb-3">
+          <select class="form-select form-select-md mb-3 project-type" aria-label=".form-select-lg example">
+            <option>-- Select Project Type --</option>
+            <option value="individual">Individual</option>
+            <option value="group">Group</option>
+          </select>
         </div>
-        <div class="row mb-3">
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Supervisor" aria-label="First name">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Session" aria-label="Last name">
-          </div>
+        <div class="mb-3 d-none group-details">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="add group matric numbers..."></textarea>
         </div>
         <div class="col-12 mb-3">
           <input type="text" class="form-control" placeholder="Project Topic" aria-label="First name">
         </div>
         <div class="col-12 mb-3">
           <input type="text" class="form-control" placeholder="Seminar Topic" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <input type="file" class="form-control" placeholder="Password" aria-label="First name">
         </div>
         <div class="col-12 mb-3">
           <button type="submit" class="btn btn-block float-end register-page-btn">Edit</button>
@@ -333,8 +514,52 @@
             </div>
         </div>
     </div>
-</div>     
-    <!-- ENDS HERE -->
+</div> 
+<!-- ENDS HERE -->
+
+
+<!-- UPLOAD PROJECTS AND SEMINARS MODAL SECTION STARTS HERE -->
+<div class="modal fade" id="upload-project-to-table-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Upload Project And Seminar</h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form class="mt-3">
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Full Name" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <select class="form-select form-select-md mb-3 project-type" aria-label=".form-select-lg example">
+            <option>-- Select Project Type --</option>
+            <option value="individual">Individual</option>
+            <option value="group">Group</option>
+          </select>
+        </div>
+        <div class="mb-3 d-none group-details">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="add group matric numbers..."></textarea>
+        </div>
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Project Topic" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Seminar Topic" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <input type="file" class="form-control" placeholder="Password" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <button type="submit" class="btn btn-block float-end register-page-btn">Upload Project / Seminar</button>
+          <div class="clearfix"></div>
+        </div>
+      </form>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- ENDS HERE -->
 
   </div>
 </div>
@@ -409,5 +634,6 @@
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

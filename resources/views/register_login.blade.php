@@ -28,7 +28,7 @@
       <div class="overlay pt-4">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Register</li>
           </ol>
         </nav>
@@ -39,7 +39,7 @@
         <p class="text-white">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, enim tempore facere iure voluptas minus expedita inventore odio! Facilis asperiores voluptatibus quos? Consequuntur aspernatur delectus veniam debitis? Ex esse magnam iure, beatae, totam vitae provident maiores reprehenderit perspiciatis eius expedita quod? Cum velit accusantium sequi unde 
         </p>
-        <a href="#">
+        <a href="{{ url('/') }}">
           <button class="btn btn-block shadow-none mb-3 explore-project-btn">Explore More projects &nbsp;<i class="bi bi-arrow-right"></i></button>
         </a>
       </div>
@@ -67,6 +67,16 @@
           <div class="col-md-6 mb-3">
             <input type="text" class="form-control" placeholder="Session i.e 2021/2022" aria-label="Last name">
           </div>
+        </div>
+        <div class="col-12 mb-3">
+          <select class="form-select form-select-md mb-3 project-type" aria-label=".form-select-lg example">
+            <option>-- Select Project Type --</option>
+            <option value="individual">Individual</option>
+            <option value="group">Group</option>
+          </select>
+        </div>
+        <div class="mb-3 d-none group-details">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="add group matric numbers..."></textarea>
         </div>
         <div class="col-12 mb-3">
           <input type="text" class="form-control" placeholder="Project Topic" aria-label="First name">
@@ -97,7 +107,7 @@
         <div class="col-12 mb-3">
           <button type="submit" class="btn btn-block w-100 login-page-btn">Login</button>
           <p class="text-center mt-3">
-            <a href="#">Back To Home Page</a>
+            <a href="{{ url('/') }}">Back To Home Page</a>
           </p>
         </div>
       </form>
@@ -105,5 +115,6 @@
   </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

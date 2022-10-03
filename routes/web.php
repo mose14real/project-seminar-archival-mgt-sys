@@ -21,10 +21,14 @@ Route::get('/register', function () {
     return view('register_login');
 });
 
+Route::get('/project-details', function () {
+    return view('project_details');
+});
+
 Route::get('/users', function () {
-    return view('users/users');
+    return view('users.users');
 });
 
 Route::get('/admin', function () {
-    return view('admin/admin');
+    return view('admin.admin');
 });

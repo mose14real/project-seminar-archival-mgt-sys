@@ -17,12 +17,12 @@
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
-    <title>Project & Seminar Archival Mgt Sys</title>
+    <title>Project Details | Project & Seminar Archival Mgt Sys</title>
 </head>
 <body>
 
 <!-- NAVBAR SECTION STARTS HERE -->
-<nav class="navbar navbar-expand-lg" id="navigation-bar">
+<nav class="navbar navbar-expand-lg">
   <div class="container">
     <h1 class="navbar-brand font-bold text-white" href="#"><i class="bi bi-box-seam-fill"></i> ProjectArch</h1>
     <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,15 +38,15 @@
           <a class="nav-link text-white " href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="#projects">Seminars</a>
+          <a class="nav-link text-white " href="#">Seminars</a>
         </li>
       </ul>
       <!-- register and login button wrapper -->
       <div>
-        <a href="{{ url('register') }}" class="">
+        <a href="#" class="">
             <button class="btn btn-block shadow-none register-btn">Register</button>
         </a>
-        <a href="{{ url('register') }}" class="ms-3 mt-2">
+        <a href="#" class="ms-3 mt-2">
             <button class="btn btn-block shadow-none login-btn">Login</button>
         </a>
       </div>
@@ -55,7 +55,7 @@
 </nav>
 
 <!-- HEADER SECTION STARTS HERE -->
-<header class="header-section d-flex align-items-center justify-content-center flex-column" id="header">
+<header class="header-section d-flex align-items-center justify-content-center flex-column">
   <div class="container">
     <h1 class="text-center header-text">Project and Seminar Management System <i class="fas fa-book-open-cover"></i></h1>
     <p class="mt-3 text-center text-white">
@@ -81,78 +81,66 @@
 </header>
 
 <!-- PROJECT AND SEMINAR HERE -->
-<div class="project-and-seminar-section bg-white" id="projects">
+<div class="project-details-section bg-white" id="projects">
+    <!-- starts -->
   <div class="container">
-    <h2 class="text-center mt-5 deep-blue-color">Projects And Seminars</h2>
-    <p class="text-center mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus laborum optio neque minima, asperiores assumenda repellat explicabo et aut sit earum atque cupiditate nam voluptatibus nisi, porro quae aliquam harum modi dolor? Voluptatum repellat tempore repudiandae praesentium error totam magnam dolorem debitis, molestiae explicabo cum id maiores vel unde nostrum ad, earum sit minus? Consequatur, voluptas officiis consequuntur quos illum error! Exercitationem, pariatur beatae qui dolore facilis voluptates unde nesciunt vitae quod sint, non animi ducimus libero nobis numquam eum laborum. Quo consequuntur dicta odio quos corrupti eveniet sequi architecto nihil tenetur excepturi alias rem ab laudantium, repellendus quia sed!</p>
-    <div class="row">
-      <!-- Ilustrations -->
-      <div class="col-md-4 p-2">
-        <img src="{{ asset('img/2.svg') }}" alt="" class="project-illustrations mt-5">
-      </div>
-
-      <!-- projects cards starts here -->
-      <div class="col-md-4 p-2">
-        <div class="card mt-5">
-        <div class="card-header project-header">
-          <h4 class="text-white">Projects</h4>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-            <a href="#">online exam project in PHP</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">PSimple Furniture Website Single Page Template</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">Android Firebase Attendance System template in kotlin</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">Watch Trailer Responsive Website template in WEB</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">online exam project in PHP</a>
-          </li>
-        </ul>
-        </div>
-      </div>
-
-      <!-- Seminars cards starts here -->
-      <div class="col-md-4 p-2">
-        <div class="card mt-5">
-        <div class="card-header seminar-header">
-          <h4 class="text-white">Seminars</h4>
-        </div>
-        <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <a href="#">eCommerce Website project in PHP</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">Online Shopping Store project in PHP</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">House Decor template in HTML CSS</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">Online Shopping Store project in PHP</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">Watch Trailer Responsive Website template in WEB</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">online exam project in PHP</a>
-          </li>
-        </ul>
-        </div>
-      </div>
+    <h2 class="text-center mt-5 deep-blue-color">Projects Downloads</h2>
+    <h2 class="fw-light mt-5">Free Download Online Air Conditioner Shop Project in PHP with source code</h2>
+    <div class="mt-3">
+        <span class="badge bg-primary text-white fs-6 fw-normal">Projects</span>
+        <span class="me-3 fs-6">Published on -</span><span class="timestamp fs-6"><i class="bi bi-clock-fill fs-6"></i> 2022-09-14</span>
     </div>
-
+    <!-- student details card starts here -->
+    <div class="mt-5 col-md-4 student-details-card">
+       <div class="row">
+            <div class="col p-3">
+                <img src="{{ asset('img/4.svg') }}" alt="">
+            </div>
+            <div class="col p-3">
+                <h3 class="fw-normal fs-5">
+                    <a href="#">Ariyibi Baseet</a>
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur 
+                </p>
+                <div class="mt-2">
+                    <a href="fs-5"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="fs-5"><i class="bi bi-twitter fs-4 ms-2"></i></a>
+                    <a href="fs-5"><i class="bi bi-linkedin fs-4 ms-2"></i></a>
+                    <a href="fs-5"><i class="bi bi-instagram fs-4 ms-2"></i></a>
+                </div>
+            </div>
+       </div>
     </div>
+    <!-- ends here -->
+
+    <h2 class="fw-normal mt-5">Project Details</h2>
+    <span class="badge bg-primary text-white fs-6 fw-normal">Project information</span>
+    <div class="mt-5">
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <th scope="row">Project Name</th>
+                <td>Online Air Conditioner Shop</td>
+            </tr>
+            <tr>
+                <th scope="row">Project ID</th>
+                <td>9126</td>
+            </tr>
+            <tr>
+                <th scope="row">Developer Name</th>
+                <td>Ariyibi</td>
+            </tr>
+        </tbody>
+    </table>
   </div>
+  </div>
+  <!-- cont ends -->
+  <!-- ends -->
 </div>
 
 <!-- PROJECTS -->
-<div class="projects" id="project-seminar-list">
+<div class="projects">
   <div class="container">
   <h2 class="text-center mb-3 mt-5 deep-blue-color">Projects And Seminars Lists</h2>
   <div class="row">
@@ -270,7 +258,7 @@
 
         <!-- ProjectArch -->
         <div class="col-md-6 p-3 mb-3">
-          <a href="#navigation-bar">
+          <a href="#">
             <h4 class="text-white mt-3"><i class="bi bi-box-seam-fill"></i> ProjectArch</h4>
           </a>
           <p class="text-white mt-3">
@@ -286,16 +274,16 @@
               <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Home</a>
             </li>
             <li class="mt-2">
-              <i class="bi bi-chevron-right text-white"></i> <a href="#project-seminar-list" class="text-white quick-links">Projects</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Projects</a>
             </li>
             <li class="mt-2">
-              <i class="bi bi-chevron-right text-white"></i> <a href="#project-seminar-list" class="text-white quick-links">Seminars</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Seminars</a>
             </li>
             <li class="mt-2">
-              <i class="bi bi-chevron-right text-white"></i> <a href="{{ url('register') }}" class="text-white quick-links">Register</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Register</a>
             </li>
             <li class="mt-2">
-              <i class="bi bi-chevron-right text-white"></i> <a href="{{ url('register') }}" class="text-white quick-links">Login</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Login</a>
             </li>
           </ul>
         </div>
@@ -304,7 +292,7 @@
         <div class="col-md-3 p-3 mb-3">
           <h5 class="text-white mt-3">Social Links</h5>
 
-          <a href="#navigation-bar" class="text-white social-links">
+          <a href="#" class="text-white social-links">
             <i class="bi bi-facebook fs-4 mt-3"></i>
           </a>
 
