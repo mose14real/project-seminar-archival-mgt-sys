@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('seminars', function (Blueprint $table) {
             $table->id();
+            $table->string('seminar_topic');
+            $table->text('seminar_desc');
+            $table->string('seminar_file_path')->nullable();
             $table->timestamps();
         });
     }

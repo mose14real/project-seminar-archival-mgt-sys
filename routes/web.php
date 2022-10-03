@@ -13,14 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::resource('students', StudentController::class);
+Route::resource('admin', AdminController::class);
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/register', function () {
+Route::get('register', function () {
     return view('register_login');
 });
 
+<<<<<<< HEAD
 Route::get('/project-details', function () {
     return view('project_details');
 });
@@ -30,5 +34,12 @@ Route::get('/users', function () {
 });
 
 Route::get('/admin', function () {
+=======
+Route::get('users', function () {
+    return view('users.users');
+});
+
+Route::get('admin', function () {
+>>>>>>> 5a42f7206cf8a6bf6a37ccbb477dde88e285ddad
     return view('admin.admin');
 });
