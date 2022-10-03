@@ -29,7 +29,7 @@ Route::get('/project-details', function () {
 });
 
 Route::get('users', function () {
-    return view('users.users');
+    return view('students.users');
 });
 
 Route::get('admin', function () {
