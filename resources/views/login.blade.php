@@ -52,64 +52,30 @@
         <div class="col-12 mb-3">
           <input type="text" class="form-control" placeholder="Full Name" aria-label="First name">
         </div>
-        <div class="row">
-          <div class="col-md-6 mb-3">
+          <div class="col-12 mb-3">
             <input type="text" class="form-control" placeholder="Matric Number" aria-label="First name">
           </div>
-          <div class="col-md-6 mb-3">
+          <div class="col-12 mb-3">
             <input type="text" class="form-control" placeholder="Phone Number" aria-label="Last name">
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mb-3">
+          <div class="col-12 mb-3">
             <input type="text" class="form-control" placeholder="Supervisor" aria-label="First name">
           </div>
-          <div class="col-md-6 mb-3">
+          <div class="col-12 mb-3">
             <input type="text" class="form-control" placeholder="Session i.e 2021/2022" aria-label="Last name">
           </div>
-        </div>
-        <div class="col-12 mb-3">
-          <select class="form-select form-select-md mb-3 project-type" aria-label=".form-select-lg example">
-            <option>-- Select Project Type --</option>
-            <option value="individual">Individual</option>
-            <option value="group">Group</option>
-          </select>
-        </div>
-        <div class="mb-3 d-none group-details">
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="add group matric numbers..."></textarea>
-        </div>
-        <div class="col-12 mb-3">
-          <input type="text" class="form-control" placeholder="Project Topic" aria-label="First name">
-        </div>
-        <div class="col-12 mb-3">
-          <input type="text" class="form-control" placeholder="Seminar Topic" aria-label="First name">
-        </div>
         <div class="col-12 mb-3">
           <input type="password" class="form-control" placeholder="Password" aria-label="First name">
+        </div>
+        <div class="col-12 mb-3">
+          <input type="password" class="form-control" placeholder="Confirm Password" aria-label="First name">
         </div>
         <div class="col-12 mb-3">
           <button type="submit" class="btn btn-block w-100 register-page-btn">Register</button>
           <div class="clearfix"></div>
         </div>
-        <p class="text-center">Already Have An Account?🤔  Kindly login below 👇👇</p>
-      </form>
-
-      <h4 class="mt-5 deep-blue-color">Login</h4>
-      <form class="mt-3">
-        <div class="row">
-          <div class="col-md-6 mb-3">
-              <input type="text" class="form-control" placeholder="Matric Number" aria-label="First name">
-          </div>
-          <div class="col-md-6 mb-3">
-              <input type="password" class="form-control" placeholder="Password" aria-label="First name">
-          </div>
-        </div>
-        <div class="col-12 mb-3">
-          <button type="submit" class="btn btn-block w-100 login-page-btn">Login</button>
-          <p class="text-center mt-3">
-            <a href="{{ url('/') }}">Back To Home Page</a>
-          </p>
-        </div>
+        <p class="text-center">Already Have An Account?🤔  Kindly <a href="">Login</a> </p>
+        <p class="text-center"><a href="">Back to Home Page</a> </p>
       </form>
     </div>
   </div>
