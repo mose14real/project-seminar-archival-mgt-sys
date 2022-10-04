@@ -21,7 +21,11 @@ Route::get('/', function () {
 });
 
 Route::get('register', function () {
-    return view('register_login');
+    return view('register');
+});
+
+Route::get('login', function () {
+    return view('login');
 });
 
 Route::get('/project-details', function () {
