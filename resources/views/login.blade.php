@@ -17,7 +17,7 @@
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
-    <title>Register | Project & Seminar Archival Mgt Sys</title>
+    <title>Login | Project & Seminar Archival Mgt Sys</title>
 </head>
 <body>
 <!-- REGISTRATION SECTION STARTS HERE -->
@@ -29,7 +29,7 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Register</li>
+            <li class="breadcrumb-item active" aria-current="page">Login</li>
           </ol>
         </nav>
         <div class="">
@@ -46,35 +46,20 @@
     </div>
 
     <!-- form register section starts here -->
-    <div class="col-md-6 pt-4 form-register">
-      <h4 class="deep-blue-color">Registration</h4>
+    <div class="col-md-6 pt-4 d-flex align-items-center justify-content-center flex-column form-register">
+      <h4 class="deep-blue-color text-start d-block">Login</h4>
       <form class="mt-3">
-        <div class="col-12 mb-3">
-          <input type="text" class="form-control" placeholder="Full Name" aria-label="First name">
-        </div>
           <div class="col-12 mb-3">
             <input type="text" class="form-control" placeholder="Matric Number" aria-label="First name">
-          </div>
-          <div class="col-12 mb-3">
-            <input type="text" class="form-control" placeholder="Phone Number" aria-label="Last name">
-          </div>
-          <div class="col-12 mb-3">
-            <input type="text" class="form-control" placeholder="Supervisor" aria-label="First name">
-          </div>
-          <div class="col-12 mb-3">
-            <input type="text" class="form-control" placeholder="Session i.e 2021/2022" aria-label="Last name">
           </div>
         <div class="col-12 mb-3">
           <input type="password" class="form-control" placeholder="Password" aria-label="First name">
         </div>
         <div class="col-12 mb-3">
-          <input type="password" class="form-control" placeholder="Confirm Password" aria-label="First name">
-        </div>
-        <div class="col-12 mb-3">
-          <button type="submit" class="btn btn-block w-100 register-page-btn">Register</button>
+          <button type="submit" class="btn btn-block w-100 register-page-btn">Login</button>
           <div class="clearfix"></div>
         </div>
-        <p class="text-center">Already Have An Account?🤔  Kindly <a href="">Login</a> </p>
+        <p class="text-center">Don't have an Account?🤔  Kindly <a href="">Register</a> </p>
         <p class="text-center"><a href="">Back to Home Page</a> </p>
       </form>
     </div>

@@ -338,8 +338,8 @@
             <tr>
                 <th scope="row">Action</th>
                 <td>
-                  <button class="btn btn-block edit-btn w-25" data-bs-toggle="modal" data-bs-target="#project-edit-registration-modal"><!--<i class="bi bi-pencil-square"></i>-->Edit</button>
-                  <button class="btn btn-block edit-btn w-25" data-bs-toggle="modal" data-bs-target="#student-data-modal" download=""><!--<i class="bi bi-pencil-square"></i>-->Download</button>
+                  <!-- <button class="btn btn-block edit-btn w-25" data-bs-toggle="modal" data-bs-target="#project-edit-registration-modal">Edit</button> -->
+                  <button class="btn btn-block edit-btn w-25" data-bs-toggle="modal" data-bs-target="#student-data-modal" download="">Download</button>
                 </td>
             </tr>
         </tbody>
@@ -357,10 +357,10 @@
                 <th scope="row">Seminar Description</th>
                 <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio ipsam obcaecati doloribus officiis, nesciunt eum laborum nostrum error consectetur?</td>
             </tr>
-            <tr>
+            <!-- <tr>
                 <th scope="row">Student Matric Number</th>
                 <td></td>
-            </tr>
+            </tr> -->
             <tr>
                 <th scope="row">File</th>
                 <td>
@@ -370,7 +370,7 @@
             <tr>
                 <th scope="row">Action</th>
                 <td>
-                  <button class="btn btn-block edit-btn w-25" data-bs-toggle="modal" data-bs-target="#seminar-edit-registration-modal"><!--<i class="bi bi-pencil-square"></i>-->Edit</button>
+                  <!-- <button class="btn btn-block edit-btn w-25" data-bs-toggle="modal" data-bs-target="#seminar-edit-registration-modal">Edit</button> -->
                   <button class="btn btn-block edit-btn w-25" data-bs-toggle="modal" data-bs-target="#student-data-modal" download=""><!--<i class="bi bi-pencil-square"></i>-->Download</button>
                 </td>
             </tr>
@@ -380,7 +380,7 @@
 </div>
 
 <!-- PROJECT REGISTRATION EDIT MODAL SECTION STARTS HERE -->
-<div class="modal fade" id="project-edit-registration-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+<!-- <div class="modal fade" id="project-edit-registration-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -413,11 +413,11 @@
             </div>
         </div>
     </div>
-</div> 
+</div>  -->
 <!-- ENDS HERE -->
 
 <!-- SEMINAR REGISTRATION EDIT MODAL SECTION STARTS HERE -->
-<div class="modal fade" id="seminar-edit-registration-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+<!-- <div class="modal fade" id="seminar-edit-registration-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -440,7 +440,7 @@
             </div>
         </div>
     </div>
-</div> 
+</div>  -->
 <!-- ENDS HERE -->
 
 <!-- PROJECT AND SEMINAR HERE -->
