@@ -31,7 +31,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
         <li class="nav-item">
-          <a class="nav-link text-white active me-2" aria-current="page" href="#">Home</a>
+          <a class="nav-link text-white active me-2" aria-current="page" href="{{ url('user') }}">Home</a>
         </li>
         <li class="nav-item d-flex">
           <input type="search" class="form-control shadow-none" placeholder="Search Projects/Seminars" aria-label="">
@@ -464,24 +464,24 @@
           </p>
         </div>
 
-        <!-- quick links -->
+        {{-- <!-- quick links -->
         <div class="col-md-3 p-3 mb-3">
           <h5 class="text-white mt-3">Quick Links</h5>
           <ul>
             <li class="mt-3">
-              <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Home</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="{{ url('user') }}" class="text-white quick-links">Home</a>
             </li>
             <li class="mt-2">
               <i class="bi bi-chevron-right text-white"></i> <a href="#projects" class="text-white quick-links">Projects</a>
             </li>
             <li class="mt-2">
-              <i class="bi bi-chevron-right text-white"></i> <a href="#projects" class="text-white quick-links">Seminars</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="#seminars" class="text-white quick-links">Seminars</a>
             </li>
             <li class="mt-2">
               <i class="bi bi-chevron-right text-white"></i> <a href="{{ url('register') }}" class="text-white quick-links">Register</a>
             </li>
             <li class="mt-2">
-              <i class="bi bi-chevron-right text-white"></i> <a href="{{ url('register') }}" class="text-white quick-links">Login</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="{{ url('login') }}" class="text-white quick-links">Login</a>
             </li>
           </ul>
         </div>
@@ -505,8 +505,7 @@
           <a href="#" class="fs-4 ms-3 mt-3 text-white social-links">
             <i class="bi bi-instagram"></i>
           </a>
-
-        </div>
+        </div> --}}
 
     </div>
   </div>

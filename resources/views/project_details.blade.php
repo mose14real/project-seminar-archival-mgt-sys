@@ -38,7 +38,7 @@
           <a class="nav-link text-white " href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="#">Seminars</a>
+          <a class="nav-link text-white " href="#seminars">Seminars</a>
         </li>
       </ul>
       <!-- register and login button wrapper -->
