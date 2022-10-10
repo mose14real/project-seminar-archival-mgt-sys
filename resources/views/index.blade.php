@@ -23,7 +23,7 @@
 <!-- NAVBAR SECTION STARTS HERE -->
 <nav class="navbar navbar-expand-lg" id="navigation-bar">
   <div class="container">
-    <h1 class="navbar-brand font-bold text-white" href="#"><i class="bi bi-box-seam-fill"></i> ProjectArch</h1>
+    <h1 class="navbar-brand font-bold text-white" href="{{ url('/') }}"><i class="bi bi-box-seam-fill"></i> ProjectArch</h1>
     <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <!-- <span class="navbar-toggler-icon"></span> -->
       <li class="bi bi-list fs-1 text-white"></li>
@@ -31,7 +31,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
         <li class="nav-item">
-          <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+          <a class="nav-link text-white active" aria-current="page" href="{{ url('/') }}">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white " href="#projects">Projects</a>
@@ -45,7 +45,7 @@
         <a href="{{ url('register') }}" class="">
             <button class="btn btn-block shadow-none register-btn">Register</button>
         </a>
-        <a href="{{ url('register') }}" class="ms-3 mt-2">
+        <a href="{{ url('login') }}" class="ms-3 mt-2">
             <button class="btn btn-block shadow-none login-btn">Login</button>
         </a>
       </div>
@@ -280,19 +280,20 @@
           <h5 class="text-white mt-3">Quick Links</h5>
           <ul>
             <li class="mt-3">
-              <i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white quick-links">Home</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="{{ url('/') }}
+              " class="text-white quick-links">Home</a>
             </li>
             <li class="mt-2">
               <i class="bi bi-chevron-right text-white"></i> <a href="#projects" class="text-white quick-links">Projects</a>
             </li>
             <li class="mt-2">
-              <i class="bi bi-chevron-right text-white"></i> <a href="#projects" class="text-white quick-links">Seminars</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="#seminars" class="text-white quick-links">Seminars</a>
             </li>
             <li class="mt-2">
               <i class="bi bi-chevron-right text-white"></i> <a href="{{ url('register') }}" class="text-white quick-links">Register</a>
             </li>
             <li class="mt-2">
-              <i class="bi bi-chevron-right text-white"></i> <a href="{{ url('register') }}" class="text-white quick-links">Login</a>
+              <i class="bi bi-chevron-right text-white"></i> <a href="{{ url('login') }}" class="text-white quick-links">Login</a>
             </li>
           </ul>
         </div>

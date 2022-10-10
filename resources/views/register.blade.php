@@ -29,7 +29,7 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Register</li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="{{ url('register') }}">Register</a></li>
           </ol>
         </nav>
         <div class="">
@@ -74,8 +74,8 @@
           <button type="submit" class="btn btn-block w-100 register-page-btn">Register</button>
           <div class="clearfix"></div>
         </div>
-        <p class="text-center">Already Have An Account?🤔  Kindly <a href="">Login</a> </p>
-        <p class="text-center"><a href="">Back to Home Page</a> </p>
+        <p class="text-center">Already Have An Account?🤔  Kindly <a href="{{ url('login') }}">Login</a> </p>
+        <p class="text-center"><a href="{{ url('/') }}">Back to Home Page</a> </p>
       </form>
     </div>
   </div>

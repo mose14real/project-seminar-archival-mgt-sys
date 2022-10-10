@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('students', StudentController::class);
+Route::resource('student', StudentController::class);
 Route::resource('admin', AdminController::class);
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('register', function () {
@@ -28,12 +28,12 @@ Route::get('login', function () {
     return view('login');
 });
 
-Route::get('/project-details', function () {
+Route::get('project-details', function () {
     return view('project_details');
 });
 
-Route::get('users', function () {
-    return view('students.users');
+Route::get('user', function () {
+    return view('student.user');
 });
 
 Route::get('admin', function () {
