@@ -36,6 +36,10 @@ Route::get('user', function () {
     return view('student.user');
 });
 
+Route::get('user-profile', function () {
+    return view('student.user-profile');
+});
+
 Route::get('admin', function () {
     return view('admin.admin');
 });
