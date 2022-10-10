@@ -62,7 +62,7 @@
           <i class="bi bi-person-circle"></i> Ariyibi
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"><i class="bi bi-person-badge-fill"></i> Profile</a></li>
+            <li><a class="dropdown-item" href="{{ url('/user-profile') }}"><i class="bi bi-person-badge-fill"></i> Profile</a></li>
             <!-- <li><a class="dropdown-item" href="#project-seminar"><i class="bi bi-journals"></i> My projects</a></li> -->
             <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->
             <li><hr class="dropdown-divider"></li>
