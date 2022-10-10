@@ -114,7 +114,7 @@
     </div>
     <!-- ends here -->
 
-    <h2 class="fw-normal mt-5">Project Details</h2>
+    <h2 class="fw-normal mt-5">Project Details..</h2>
     <span class="badge bg-primary text-white fs-6 fw-normal">Project information</span>
     <div class="mt-5">
     <table class="table table-bordered">
