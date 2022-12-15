@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('student', StudentController::class);
-Route::resource('admin', AdminController::class);
+// Route::resource('student', StudentController::class);
+// Route::resource('admin', AdminController::class);
 
 Route::get('/', function () {
     return view('index');

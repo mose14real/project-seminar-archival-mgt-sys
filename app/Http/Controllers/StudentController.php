@@ -35,6 +35,13 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         //
+        $request->validate([
+            'name' => ['required'],
+            'content' => ['required']
+        ]);
+
+        Post::create($request->all());
+        return redirect()->route('posts.index')->with('success', 'New post has been added successfully!');
     }
 
     /**
